@@ -1,5 +1,6 @@
 #include "EverEngineCore/platform/Window.h"
 #include "EverEngineCore/core/Event.h"
+#include "EverEngineCore/core/Log.h"
 
 #include <GLFW/glfw3.h>
 #include <iostream>
@@ -12,11 +13,13 @@ Window::Window(const unsigned int width, const unsigned int height, const char* 
     : m_data({title, width, height})
 {
     int statusCode = init();
+    LOG_INFO("WINDOW::INIT::STATUS->{}", statusCode);
 }
 
 Window::~Window()
 {
     shutdown();
+    LOG_INFO("WINDOW::DESTROY");
 }
 
 void Window::shutdown()
@@ -29,7 +32,7 @@ int Window::init()
 {
     if(!glfwInit())
     {
-        std::cerr << "FAIL::INIT::GLFW";
+        LOG_CRIT("ERROR::GLFW::INIT");
         return -1;
     }
 
@@ -37,7 +40,7 @@ int Window::init()
 
     if(!m_window)
     {
-        std::cerr << "Failed to create GLFW window\n";
+        LOG_CRIT("ERROR::WINDOW::CREATE");
         glfwTerminate();
         return -2;
     }
@@ -81,9 +84,6 @@ void Window::listenCallbacks()
         WindowData& data = self->m_data;
 
         data.eventCallbackFn(std::make_unique<EventWindowClose>());
-    });
-
-    glfwSetFramebufferSizeCallback(m_window, [](GLFWwindow* window, int width, int height){
     });
 }
 

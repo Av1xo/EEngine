@@ -1,4 +1,5 @@
 #include "EverEngineCore/core/Time.h"
+#include "EverEngineCore/core/Log.h"
 #include <chrono>
 
 float Time::s_deltaTime = 0.0f;
@@ -8,6 +9,7 @@ using clock_time = std::chrono::steady_clock;
 
 void Time::init()
 {
+    LOG_INFO("TIME::INIT");
     s_lastFrame = std::chrono::duration<float>(clock_time::now().time_since_epoch()).count();
 }
 

@@ -1,16 +1,18 @@
 #include "Engine.h"
 #include "Time.h"
 
-Engine::Engine() {}
+Engine::Engine() {
+    m_window = std::make_unique<Window>(1280, 720, "EverEngine");
+    Time::init();
+}
+
 Engine::~Engine() {}
 
 void Engine::run()
 {
-    Time::init();
-    while (m_running)
+    while (!m_window->shouldClose())
     {  
         Time::update();
-
-        m_running = false;
+        m_window->pollEvents();
     }
 }

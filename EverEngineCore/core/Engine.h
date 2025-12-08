@@ -1,9 +1,13 @@
 #pragma once
 
+#include "Window.h"
+#include <memory>
+
+
 class Engine
 {
 private:
-    bool m_running = true;
+    std::unique_ptr<Window> m_window;
 public:
     Engine();
     ~Engine();

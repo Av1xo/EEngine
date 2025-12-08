@@ -1,18 +1,40 @@
-#include "Engine.h"
-#include "Time.h"
+#include "EverEngineCore/core/Engine.h"
+#include "EverEngineCore/core/Time.h"
+#include "EverEngineCore/platform/Window.h"
 
-Engine::Engine() {
-    m_window = std::make_unique<Window>(1280, 720, "EverEngine");
-    Time::init();
-}
+Engine::Engine() {}
 
 Engine::~Engine() {}
 
-void Engine::run()
+int Engine::init(unsigned int window_width, unsigned int window_height, const char* title) {
+    m_window = std::make_unique<Window>(window_width, window_height, title);
+    Time::init();
+    return 0;
+}
+
+void Engine::set_eventCallback()
 {
+    
+}
+
+
+int Engine::run()
+{
+    set_eventCallback();
+    m_window->set_event_callback(
+        [&](std::unique_ptr<BaseEvent> event){
+            m_dispatcher.post_event(std::move(event));
+        }
+    );
+
     while (!m_window->shouldClose())
     {  
         Time::update();
-        m_window->pollEvents();
+        m_dispatcher.process_event();
+        m_window->on_update();
+        on_update();
     }
+    m_window = nullptr;
+
+    return 0;
 }

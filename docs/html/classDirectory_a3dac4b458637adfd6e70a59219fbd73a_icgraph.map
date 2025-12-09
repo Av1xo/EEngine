@@ -1,0 +1,9 @@
+<map id="Directory::exists" name="Directory::exists">
+<area shape="rect" id="Node000001" title="Перевіряє, чи існує директорія." alt="" coords="232,67,351,92"/>
+<area shape="rect" id="Node000002" href="$classDirectory.html#a0412509f5fa1efa9e98014032526a946" title="Рекурсивно створює директорію та усі проміжні шляхи." alt="" coords="5,29,184,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,68,161,57,162,52,219,63"/>
+<area shape="rect" id="Node000003" href="$classDirectory.html#a34240fb848fe80438cad603ea4b837bb" title="Видаляє директорію." alt="" coords="27,103,162,128"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="219,95,163,106,162,100,218,90"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="129,19,119,11,95,8,74,10,63,15,61,20,67,28,63,31,56,21,59,11,73,5,95,3,121,6,133,15"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="129,93,119,84,95,81,74,83,63,88,61,94,67,101,63,104,56,94,59,84,73,78,95,76,121,80,133,88"/>
+</map>

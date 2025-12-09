@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EverEngine: Клас Window</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EverEngine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Класи</a> &#124;
+<a href="#pub-types">Загальнодоступні типи</a> &#124;
+<a href="#pub-methods">Загальнодоступні елементи</a> &#124;
+<a href="classWindow-members.html">Список всіх елементів</a>  </div>
+  <div class="headertitle"><div class="title">Клас Window</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Клас, що інкапсулює роботу з вікном GLFW та обробкою подій.  
+ <a href="classWindow.html#details">Детальніше...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Window_8h_source.html">Window.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Загальнодоступні типи</h2></td></tr>
+<tr class="memitem:a6f6aa4e8330b2e79b9d056fcbc81ee6e" id="r_a6f6aa4e8330b2e79b9d056fcbc81ee6e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a6f6aa4e8330b2e79b9d056fcbc81ee6e">EventCallbackFn</a> = std::function&lt; void(std::unique_ptr&lt; <a class="el" href="structBaseEvent.html">BaseEvent</a> &gt;)&gt;</td></tr>
+<tr class="memdesc:a6f6aa4e8330b2e79b9d056fcbc81ee6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип callback-функції, яка отримує події вікна.  <br /></td></tr>
+<tr class="separator:a6f6aa4e8330b2e79b9d056fcbc81ee6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Загальнодоступні елементи</h2></td></tr>
+<tr class="memitem:af5ea972c9da5b9f74e39d09113a0a8b1" id="r_af5ea972c9da5b9f74e39d09113a0a8b1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#af5ea972c9da5b9f74e39d09113a0a8b1">Window</a> (const unsigned int width, const unsigned int height, const char *title)</td></tr>
+<tr class="memdesc:af5ea972c9da5b9f74e39d09113a0a8b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Створює нове вікно.  <br /></td></tr>
+<tr class="separator:af5ea972c9da5b9f74e39d09113a0a8b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245d821e6016fa1f6970ccbbedd635f6" id="r_a245d821e6016fa1f6970ccbbedd635f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a245d821e6016fa1f6970ccbbedd635f6">~Window</a> ()</td></tr>
+<tr class="memdesc:a245d821e6016fa1f6970ccbbedd635f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Звільняє ресурси та закриває вікно.  <br /></td></tr>
+<tr class="separator:a245d821e6016fa1f6970ccbbedd635f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a362fb58d60e3254edddfe71e546e6993" id="r_a362fb58d60e3254edddfe71e546e6993"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a362fb58d60e3254edddfe71e546e6993">Window</a> (const <a class="el" href="classWindow.html">Window</a> &amp;other)=delete</td></tr>
+<tr class="memdesc:a362fb58d60e3254edddfe71e546e6993"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заборонено копіювання.  <br /></td></tr>
+<tr class="separator:a362fb58d60e3254edddfe71e546e6993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad96731bf201ddcb63e13b117594a62" id="r_adad96731bf201ddcb63e13b117594a62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWindow.html">Window</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#adad96731bf201ddcb63e13b117594a62">operator=</a> (const <a class="el" href="classWindow.html">Window</a> &amp;other)=delete</td></tr>
+<tr class="separator:adad96731bf201ddcb63e13b117594a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5692be0678fcf6721cec66cb97f7a66a" id="r_a5692be0678fcf6721cec66cb97f7a66a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a5692be0678fcf6721cec66cb97f7a66a">Window</a> (<a class="el" href="classWindow.html">Window</a> &amp;&amp;other)=delete</td></tr>
+<tr class="memdesc:a5692be0678fcf6721cec66cb97f7a66a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Заборонено переміщення.  <br /></td></tr>
+<tr class="separator:a5692be0678fcf6721cec66cb97f7a66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a4965de825a405514b2a7775d62de28" id="r_a9a4965de825a405514b2a7775d62de28"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWindow.html">Window</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a9a4965de825a405514b2a7775d62de28">operator=</a> (<a class="el" href="classWindow.html">Window</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a9a4965de825a405514b2a7775d62de28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4031aad0f00e053e3cab334d41efcf27" id="r_a4031aad0f00e053e3cab334d41efcf27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a4031aad0f00e053e3cab334d41efcf27">listenCallbacks</a> ()</td></tr>
+<tr class="memdesc:a4031aad0f00e053e3cab334d41efcf27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Реєструє всі необхідні callback-и GLFW.  <br /></td></tr>
+<tr class="separator:a4031aad0f00e053e3cab334d41efcf27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1caaf150558c0c35a8811f19ccac817d" id="r_a1caaf150558c0c35a8811f19ccac817d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a1caaf150558c0c35a8811f19ccac817d">shouldClose</a> () const</td></tr>
+<tr class="memdesc:a1caaf150558c0c35a8811f19ccac817d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевіряє, чи має бути закрите вікно.  <br /></td></tr>
+<tr class="separator:a1caaf150558c0c35a8811f19ccac817d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8c6b94bdfa140a6fd933b21471806c" id="r_a6d8c6b94bdfa140a6fd933b21471806c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a6d8c6b94bdfa140a6fd933b21471806c">on_update</a> ()</td></tr>
+<tr class="memdesc:a6d8c6b94bdfa140a6fd933b21471806c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оновлює стан вікна: обробляє події та перемикає буфери.  <br /></td></tr>
+<tr class="separator:a6d8c6b94bdfa140a6fd933b21471806c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c4efc06a4aed37198a48a67a8beccb0" id="r_a9c4efc06a4aed37198a48a67a8beccb0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a9c4efc06a4aed37198a48a67a8beccb0">get_width</a> () const</td></tr>
+<tr class="memdesc:a9c4efc06a4aed37198a48a67a8beccb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отримує ширину вікна.  <br /></td></tr>
+<tr class="separator:a9c4efc06a4aed37198a48a67a8beccb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a7acd7437d120a48b8a39ab1cbd645" id="r_a81a7acd7437d120a48b8a39ab1cbd645"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a81a7acd7437d120a48b8a39ab1cbd645">get_height</a> () const</td></tr>
+<tr class="memdesc:a81a7acd7437d120a48b8a39ab1cbd645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отримує висоту вікна.  <br /></td></tr>
+<tr class="separator:a81a7acd7437d120a48b8a39ab1cbd645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80ff6ab09f5206a93afcb122d9e91830" id="r_a80ff6ab09f5206a93afcb122d9e91830"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a80ff6ab09f5206a93afcb122d9e91830">set_event_callback</a> (const <a class="el" href="classWindow.html#a6f6aa4e8330b2e79b9d056fcbc81ee6e">EventCallbackFn</a> &amp;callback)</td></tr>
+<tr class="memdesc:a80ff6ab09f5206a93afcb122d9e91830"><td class="mdescLeft">&#160;</td><td class="mdescRight">Установлює callback-функцію для отримання всіх подій вікна.  <br /></td></tr>
+<tr class="separator:a80ff6ab09f5206a93afcb122d9e91830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee41eb997d488c0ce69a893bcbdb02b" id="r_a7ee41eb997d488c0ce69a893bcbdb02b"><td class="memItemLeft" align="right" valign="top">GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWindow.html#a7ee41eb997d488c0ce69a893bcbdb02b">getHandle</a> () const</td></tr>
+<tr class="memdesc:a7ee41eb997d488c0ce69a893bcbdb02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає внутрішній вказівник на GLFWwindow.  <br /></td></tr>
+<tr class="separator:a7ee41eb997d488c0ce69a893bcbdb02b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p>Клас, що інкапсулює роботу з вікном GLFW та обробкою подій. </p>
+<p>Клас відповідає за створення вікна, обробку вводу, виклики callback-функцій, оновлення буферів та завершення роботи. </p>
+</div><h2 class="groupheader">Опис типів користувача</h2>
+<a id="a6f6aa4e8330b2e79b9d056fcbc81ee6e" name="a6f6aa4e8330b2e79b9d056fcbc81ee6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f6aa4e8330b2e79b9d056fcbc81ee6e">&#9670;&#160;</a></span>EventCallbackFn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classWindow.html#a6f6aa4e8330b2e79b9d056fcbc81ee6e">Window::EventCallbackFn</a> =  std::function&lt;void(std::unique_ptr&lt;<a class="el" href="structBaseEvent.html">BaseEvent</a>&gt;)&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Тип callback-функції, яка отримує події вікна. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Конструктор(и)</h2>
+<a id="af5ea972c9da5b9f74e39d09113a0a8b1" name="af5ea972c9da5b9f74e39d09113a0a8b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ea972c9da5b9f74e39d09113a0a8b1">&#9670;&#160;</a></span>Window() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Window::Window </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned int&#160;</td>
+          <td class="paramname"><em>height</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>title</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Створює нове вікно. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">width</td><td>Ширина вікна у пікселях. </td></tr>
+    <tr><td class="paramname">height</td><td>Висота вікна у пікселях. </td></tr>
+    <tr><td class="paramname">title</td><td>Назва вікна. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a245d821e6016fa1f6970ccbbedd635f6" name="a245d821e6016fa1f6970ccbbedd635f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a245d821e6016fa1f6970ccbbedd635f6">&#9670;&#160;</a></span>~Window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Window::~Window </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Звільняє ресурси та закриває вікно. </p>
+
+</div>
+</div>
+<a id="a362fb58d60e3254edddfe71e546e6993" name="a362fb58d60e3254edddfe71e546e6993"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a362fb58d60e3254edddfe71e546e6993">&#9670;&#160;</a></span>Window() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Window::Window </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classWindow.html">Window</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Заборонено копіювання. </p>
+
+</div>
+</div>
+<a id="a5692be0678fcf6721cec66cb97f7a66a" name="a5692be0678fcf6721cec66cb97f7a66a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5692be0678fcf6721cec66cb97f7a66a">&#9670;&#160;</a></span>Window() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Window::Window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classWindow.html">Window</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Заборонено переміщення. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Опис методів компонент</h2>
+<a id="a81a7acd7437d120a48b8a39ab1cbd645" name="a81a7acd7437d120a48b8a39ab1cbd645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a7acd7437d120a48b8a39ab1cbd645">&#9670;&#160;</a></span>get_height()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Window::get_height </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отримує висоту вікна. </p>
+<dl class="section return"><dt>Повертає</dt><dd>висота у пікселях. </dd></dl>
+
+</div>
+</div>
+<a id="a9c4efc06a4aed37198a48a67a8beccb0" name="a9c4efc06a4aed37198a48a67a8beccb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c4efc06a4aed37198a48a67a8beccb0">&#9670;&#160;</a></span>get_width()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int Window::get_width </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Отримує ширину вікна. </p>
+<dl class="section return"><dt>Повертає</dt><dd>ширина у пікселях. </dd></dl>
+
+</div>
+</div>
+<a id="a7ee41eb997d488c0ce69a893bcbdb02b" name="a7ee41eb997d488c0ce69a893bcbdb02b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ee41eb997d488c0ce69a893bcbdb02b">&#9670;&#160;</a></span>getHandle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLFWwindow * Window::getHandle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає внутрішній вказівник на GLFWwindow. </p>
+<dl class="section return"><dt>Повертає</dt><dd>GLFWwindow* </dd></dl>
+
+</div>
+</div>
+<a id="a4031aad0f00e053e3cab334d41efcf27" name="a4031aad0f00e053e3cab334d41efcf27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4031aad0f00e053e3cab334d41efcf27">&#9670;&#160;</a></span>listenCallbacks()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Window::listenCallbacks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Реєструє всі необхідні callback-и GLFW. </p>
+
+</div>
+</div>
+<a id="a6d8c6b94bdfa140a6fd933b21471806c" name="a6d8c6b94bdfa140a6fd933b21471806c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8c6b94bdfa140a6fd933b21471806c">&#9670;&#160;</a></span>on_update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Window::on_update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Оновлює стан вікна: обробляє події та перемикає буфери. </p>
+
+</div>
+</div>
+<a id="adad96731bf201ddcb63e13b117594a62" name="adad96731bf201ddcb63e13b117594a62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adad96731bf201ddcb63e13b117594a62">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classWindow.html">Window</a> &amp; Window::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classWindow.html">Window</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9a4965de825a405514b2a7775d62de28" name="a9a4965de825a405514b2a7775d62de28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a4965de825a405514b2a7775d62de28">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classWindow.html">Window</a> &amp; Window::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classWindow.html">Window</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80ff6ab09f5206a93afcb122d9e91830" name="a80ff6ab09f5206a93afcb122d9e91830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80ff6ab09f5206a93afcb122d9e91830">&#9670;&#160;</a></span>set_event_callback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Window::set_event_callback </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classWindow.html#a6f6aa4e8330b2e79b9d056fcbc81ee6e">EventCallbackFn</a> &amp;&#160;</td>
+          <td class="paramname"><em>callback</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Установлює callback-функцію для отримання всіх подій вікна. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">callback</td><td>Функція, яка буде викликана при надходженні події. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1caaf150558c0c35a8811f19ccac817d" name="a1caaf150558c0c35a8811f19ccac817d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1caaf150558c0c35a8811f19ccac817d">&#9670;&#160;</a></span>shouldClose()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Window::shouldClose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перевіряє, чи має бути закрите вікно. </p>
+<dl class="section return"><dt>Повертає</dt><dd>true якщо вікно має бути закрите. </dd></dl>
+
+</div>
+</div>
+<hr/>Документація цих класів була створена з файлів:<ul>
+<li><a class="el" href="Window_8h_source.html">Window.h</a></li>
+<li><a class="el" href="Window_8cpp.html">Window.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

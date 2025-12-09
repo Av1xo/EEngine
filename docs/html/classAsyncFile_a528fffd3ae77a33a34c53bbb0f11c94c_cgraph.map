@@ -1,0 +1,5 @@
+<map id="AsyncFile::ReadBinaryAsync" name="AsyncFile::ReadBinaryAsync">
+<area shape="rect" id="Node000001" title="Асинхронне зчитування бінарного файлу." alt="" coords="5,5,199,31"/>
+<area shape="rect" id="Node000002" href="$classFile.html#a2b1f343ab4140da5d8337719985866cb" title="Зчитує бінарні дані з файлу." alt="" coords="247,5,360,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="199,15,233,15,233,21,199,21"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="Path::normalize" name="Path::normalize">
+<area shape="rect" id="Node000001" title="Нормалізує шлях (змінює роздільники, видаляє зайві елементи)." alt="" coords="524,29,637,55"/>
+<area shape="rect" id="Node000002" href="$classPath.html#abeb8b3619f08fb228ef7298edbed97db" title="Об&#39;єднує два шляхи в один." alt="" coords="399,29,476,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="510,45,476,45,476,39,510,39"/>
+<area shape="rect" id="Node000003" href="$classDirectory.html#a34240fb848fe80438cad603ea4b837bb" title="Видаляє директорію." alt="" coords="5,29,140,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="388,28,350,19,269,12,188,19,121,32,120,27,188,14,269,7,351,14,389,23"/>
+<area shape="rect" id="Node000004" href="$classDirectory.html#abc6c26f6bbf575bfe971ecbdf28efa5a" title="Повертає список піддиректорій." alt="" coords="188,79,351,104"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="386,60,314,81,313,76,385,55"/>
+<area shape="rect" id="Node000006" href="$classDirectory.html#a4b5c9d8f8845733e10ce19bfe8daf1aa" title="Повертає список файлів у директорії." alt="" coords="205,29,333,55"/>
+<area shape="poly" id="edge7_Node000002_Node000006" title=" " alt="" coords="385,45,334,45,334,39,385,39"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="107,19,97,11,73,8,52,10,41,15,39,20,45,28,41,31,34,21,37,11,51,5,73,3,99,6,111,15"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="204,78,123,57,125,52,206,73"/>
+<area shape="rect" id="Node000005" href="$classDirectory.html#a2e3d59e9340e851ab78fd359facf0945" title="Повертає список усіх об&#39;єктів (файли + директорії)." alt="" coords="15,79,130,104"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="174,94,130,94,130,89,174,89"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="192,45,140,45,140,39,192,39"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="206,61,125,81,123,76,204,55"/>
+</map>

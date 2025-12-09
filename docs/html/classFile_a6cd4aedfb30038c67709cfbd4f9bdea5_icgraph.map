@@ -1,0 +1,6 @@
+<map id="File::deleteFile" name="File::deleteFile">
+<area shape="rect" id="Node000001" title="Видаляє файл." alt="" coords="188,29,295,55"/>
+<area shape="rect" id="Node000002" href="$classDirectory.html#a34240fb848fe80438cad603ea4b837bb" title="Видаляє директорію." alt="" coords="5,29,140,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,45,141,45,141,39,175,39"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="102,19,93,11,73,8,55,10,46,15,44,20,49,28,45,31,39,21,42,11,53,5,73,3,96,6,106,15"/>
+</map>

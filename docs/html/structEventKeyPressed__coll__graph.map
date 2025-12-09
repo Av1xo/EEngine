@@ -1,0 +1,5 @@
+<map id="EventKeyPressed" name="EventKeyPressed">
+<area shape="rect" id="Node000001" title="Подія натискання клавіші" alt="" coords="5,79,132,104"/>
+<area shape="rect" id="Node000002" href="$structBaseEvent.html" title="Базова структура для всіх подій" alt="" coords="25,5,112,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,44,71,79,66,79,66,44"/>
+</map>

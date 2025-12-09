@@ -1,0 +1,9 @@
+<map id="Directory::listFiles" name="Directory::listFiles">
+<area shape="rect" id="Node000001" title="Повертає список файлів у директорії." alt="" coords="5,31,133,56"/>
+<area shape="rect" id="Node000002" href="$classFile.html#ab4696174d655d6351e5112499bfa7b6d" title="Перевіряє, чи є шлях файлом." alt="" coords="181,5,264,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,30,168,24,169,30,134,35"/>
+<area shape="rect" id="Node000003" href="$classPath.html#abeb8b3619f08fb228ef7298edbed97db" title="Об&#39;єднує два шляхи в один." alt="" coords="184,55,261,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="134,51,171,57,170,62,133,56"/>
+<area shape="rect" id="Node000004" href="$classPath.html#a4ac32f60a8c773877af18c39bd28aec9" title="Нормалізує шлях (змінює роздільники, видаляє зайві елементи)." alt="" coords="312,55,425,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="262,65,298,65,298,70,262,70"/>
+</map>

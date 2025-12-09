@@ -1,0 +1,5 @@
+<map id="EventDispatcher::process_event" name="EventDispatcher::process_event">
+<area shape="rect" id="Node000001" title="Обробляє всі події з черги" alt="" coords="5,5,179,45"/>
+<area shape="rect" id="Node000002" href="$classEventDispatcher.html#a0a56c66541e3624fd4e2a626d7cb3c76" title="Розсилає подію всім зареєстрованим обробникам" alt="" coords="227,13,403,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,23,213,23,213,28,179,28"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Path::getFilename" name="Path::getFilename">
+<area shape="rect" id="Node000001" title="Повертає ім&#39;я файлу з шляху." alt="" coords="227,35,355,60"/>
+<area shape="rect" id="Node000002" href="$classPath.html#a44c5f85d26d52863c8f88dd560ff4ad3" title="Повертає розширення файлу (без крапки)." alt="" coords="27,5,157,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,38,157,30,158,25,213,33"/>
+<area shape="rect" id="Node000003" href="$classPath.html#a37ed8c0352543194442d2b457f9fc945" title="Повертає ім&#39;я файлу без розширення." alt="" coords="5,55,179,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="213,61,179,66,178,60,212,56"/>
+</map>

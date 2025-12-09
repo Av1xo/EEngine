@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EverEngine: Клас Directory</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EverEngine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Загальнодоступні статичні елементи</a> &#124;
+<a href="classDirectory-members.html">Список всіх елементів</a>  </div>
+  <div class="headertitle"><div class="title">Клас Directory</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Утилітний клас для роботи з директоріями.  
+ <a href="classDirectory.html#details">Детальніше...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FileSystem_8h_source.html">FileSystem.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Загальнодоступні статичні елементи</h2></td></tr>
+<tr class="memitem:aefb6a76bb8880b63374f5b291cc00337" id="r_aefb6a76bb8880b63374f5b291cc00337"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectory.html#aefb6a76bb8880b63374f5b291cc00337">create</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:aefb6a76bb8880b63374f5b291cc00337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Створює директорію.  <br /></td></tr>
+<tr class="separator:aefb6a76bb8880b63374f5b291cc00337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0412509f5fa1efa9e98014032526a946" id="r_a0412509f5fa1efa9e98014032526a946"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectory.html#a0412509f5fa1efa9e98014032526a946">createRecursive</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a0412509f5fa1efa9e98014032526a946"><td class="mdescLeft">&#160;</td><td class="mdescRight">Рекурсивно створює директорію та усі проміжні шляхи.  <br /></td></tr>
+<tr class="separator:a0412509f5fa1efa9e98014032526a946"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34240fb848fe80438cad603ea4b837bb" id="r_a34240fb848fe80438cad603ea4b837bb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectory.html#a34240fb848fe80438cad603ea4b837bb">deleteDir</a> (const std::string &amp;path, bool recursive=false)</td></tr>
+<tr class="memdesc:a34240fb848fe80438cad603ea4b837bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Видаляє директорію.  <br /></td></tr>
+<tr class="separator:a34240fb848fe80438cad603ea4b837bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dac4b458637adfd6e70a59219fbd73a" id="r_a3dac4b458637adfd6e70a59219fbd73a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectory.html#a3dac4b458637adfd6e70a59219fbd73a">exists</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a3dac4b458637adfd6e70a59219fbd73a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевіряє, чи існує директорія.  <br /></td></tr>
+<tr class="separator:a3dac4b458637adfd6e70a59219fbd73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5c9d8f8845733e10ce19bfe8daf1aa" id="r_a4b5c9d8f8845733e10ce19bfe8daf1aa"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectory.html#a4b5c9d8f8845733e10ce19bfe8daf1aa">listFiles</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a4b5c9d8f8845733e10ce19bfe8daf1aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає список файлів у директорії.  <br /></td></tr>
+<tr class="separator:a4b5c9d8f8845733e10ce19bfe8daf1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6c26f6bbf575bfe971ecbdf28efa5a" id="r_abc6c26f6bbf575bfe971ecbdf28efa5a"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectory.html#abc6c26f6bbf575bfe971ecbdf28efa5a">listDirectories</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:abc6c26f6bbf575bfe971ecbdf28efa5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає список піддиректорій.  <br /></td></tr>
+<tr class="separator:abc6c26f6bbf575bfe971ecbdf28efa5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e3d59e9340e851ab78fd359facf0945" id="r_a2e3d59e9340e851ab78fd359facf0945"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectory.html#a2e3d59e9340e851ab78fd359facf0945">listAll</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a2e3d59e9340e851ab78fd359facf0945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає список усіх об'єктів (файли + директорії).  <br /></td></tr>
+<tr class="separator:a2e3d59e9340e851ab78fd359facf0945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4bd2124d7c64876850be4841a38be9" id="r_aaa4bd2124d7c64876850be4841a38be9"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectory.html#aaa4bd2124d7c64876850be4841a38be9">getCurrent</a> ()</td></tr>
+<tr class="memdesc:aaa4bd2124d7c64876850be4841a38be9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає поточну робочу директорію.  <br /></td></tr>
+<tr class="separator:aaa4bd2124d7c64876850be4841a38be9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bce6c50b4a944f6fe87751e84994687" id="r_a5bce6c50b4a944f6fe87751e84994687"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectory.html#a5bce6c50b4a944f6fe87751e84994687">getExecutable</a> ()</td></tr>
+<tr class="memdesc:a5bce6c50b4a944f6fe87751e84994687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає шлях до виконуваного файлу.  <br /></td></tr>
+<tr class="separator:a5bce6c50b4a944f6fe87751e84994687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92b0fa9fb4738f61a50c5faf928f4f8f" id="r_a92b0fa9fb4738f61a50c5faf928f4f8f"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectory.html#a92b0fa9fb4738f61a50c5faf928f4f8f">getUserHome</a> ()</td></tr>
+<tr class="memdesc:a92b0fa9fb4738f61a50c5faf928f4f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає домашню директорію користувача.  <br /></td></tr>
+<tr class="separator:a92b0fa9fb4738f61a50c5faf928f4f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b93ef59e8e7973a260032207e47c1d" id="r_a58b93ef59e8e7973a260032207e47c1d"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDirectory.html#a58b93ef59e8e7973a260032207e47c1d">getTemp</a> ()</td></tr>
+<tr class="memdesc:a58b93ef59e8e7973a260032207e47c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає тимчасову директорію.  <br /></td></tr>
+<tr class="separator:a58b93ef59e8e7973a260032207e47c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p>Утилітний клас для роботи з директоріями. </p>
+</div><h2 class="groupheader">Опис методів компонент</h2>
+<a id="aefb6a76bb8880b63374f5b291cc00337" name="aefb6a76bb8880b63374f5b291cc00337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb6a76bb8880b63374f5b291cc00337">&#9670;&#160;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Directory::create </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Створює директорію. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Шлях до директорії. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо створення успішне. </dd></dl>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_aefb6a76bb8880b63374f5b291cc00337_icgraph.svg" width="356" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a0412509f5fa1efa9e98014032526a946" name="a0412509f5fa1efa9e98014032526a946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0412509f5fa1efa9e98014032526a946">&#9670;&#160;</a></span>createRecursive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Directory::createRecursive </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Рекурсивно створює директорію та усі проміжні шляхи. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Шлях до директорії. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо створення успішне. </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_a0412509f5fa1efa9e98014032526a946_cgraph.svg" width="528" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_a0412509f5fa1efa9e98014032526a946_icgraph.svg" width="190" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a34240fb848fe80438cad603ea4b837bb" name="a34240fb848fe80438cad603ea4b837bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34240fb848fe80438cad603ea4b837bb">&#9670;&#160;</a></span>deleteDir()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Directory::deleteDir </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>recursive</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Видаляє директорію. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Шлях до директорії. </td></tr>
+    <tr><td class="paramname">recursive</td><td>Якщо true, видаляє всі вкладені файли та директорії. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо видалення успішне. </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_a34240fb848fe80438cad603ea4b837bb_cgraph.svg" width="680" height="236"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_a34240fb848fe80438cad603ea4b837bb_icgraph.svg" width="146" height="60"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a3dac4b458637adfd6e70a59219fbd73a" name="a3dac4b458637adfd6e70a59219fbd73a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3dac4b458637adfd6e70a59219fbd73a">&#9670;&#160;</a></span>exists()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Directory::exists </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перевіряє, чи існує директорія. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Шлях до директорії. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо директорія існує. </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_a3dac4b458637adfd6e70a59219fbd73a_cgraph.svg" width="292" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_a3dac4b458637adfd6e70a59219fbd73a_icgraph.svg" width="356" height="134"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aaa4bd2124d7c64876850be4841a38be9" name="aaa4bd2124d7c64876850be4841a38be9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4bd2124d7c64876850be4841a38be9">&#9670;&#160;</a></span>getCurrent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Directory::getCurrent </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає поточну робочу директорію. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Поточна директорія як рядок. </dd></dl>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_aaa4bd2124d7c64876850be4841a38be9_icgraph.svg" width="370" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a5bce6c50b4a944f6fe87751e84994687" name="a5bce6c50b4a944f6fe87751e84994687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5bce6c50b4a944f6fe87751e84994687">&#9670;&#160;</a></span>getExecutable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Directory::getExecutable </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає шлях до виконуваного файлу. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Шлях до виконуваного файлу. </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_a5bce6c50b4a944f6fe87751e84994687_cgraph.svg" width="370" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a58b93ef59e8e7973a260032207e47c1d" name="a58b93ef59e8e7973a260032207e47c1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b93ef59e8e7973a260032207e47c1d">&#9670;&#160;</a></span>getTemp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Directory::getTemp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає тимчасову директорію. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Шлях до тимчасової директорії. </dd></dl>
+
+</div>
+</div>
+<a id="a92b0fa9fb4738f61a50c5faf928f4f8f" name="a92b0fa9fb4738f61a50c5faf928f4f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92b0fa9fb4738f61a50c5faf928f4f8f">&#9670;&#160;</a></span>getUserHome()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Directory::getUserHome </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає домашню директорію користувача. </p>
+<dl class="section return"><dt>Повертає</dt><dd>Шлях до домашньої директорії. </dd></dl>
+
+</div>
+</div>
+<a id="a2e3d59e9340e851ab78fd359facf0945" name="a2e3d59e9340e851ab78fd359facf0945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e3d59e9340e851ab78fd359facf0945">&#9670;&#160;</a></span>listAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Directory::listAll </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає список усіх об'єктів (файли + директорії). </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Шлях до директорії. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Вектор імен файлів та директорій. </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_a2e3d59e9340e851ab78fd359facf0945_cgraph.svg" width="660" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="abc6c26f6bbf575bfe971ecbdf28efa5a" name="abc6c26f6bbf575bfe971ecbdf28efa5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6c26f6bbf575bfe971ecbdf28efa5a">&#9670;&#160;</a></span>listDirectories()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Directory::listDirectories </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає список піддиректорій. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Шлях до директорії. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Вектор імен піддиректорій. </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_abc6c26f6bbf575bfe971ecbdf28efa5a_cgraph.svg" width="498" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_abc6c26f6bbf575bfe971ecbdf28efa5a_icgraph.svg" width="356" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a4b5c9d8f8845733e10ce19bfe8daf1aa" name="a4b5c9d8f8845733e10ce19bfe8daf1aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5c9d8f8845733e10ce19bfe8daf1aa">&#9670;&#160;</a></span>listFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::string &gt; Directory::listFiles </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає список файлів у директорії. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Шлях до директорії. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Вектор імен файлів. </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_a4b5c9d8f8845733e10ce19bfe8daf1aa_cgraph.svg" width="431" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classDirectory_a4b5c9d8f8845733e10ce19bfe8daf1aa_icgraph.svg" width="322" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<hr/>Документація цих класів була створена з файлів:<ul>
+<li><a class="el" href="FileSystem_8h_source.html">FileSystem.h</a></li>
+<li><a class="el" href="FileSystem_8cpp.html">FileSystem.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

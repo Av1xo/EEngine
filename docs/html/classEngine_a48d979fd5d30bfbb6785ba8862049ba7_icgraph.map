@@ -1,0 +1,5 @@
+<map id="Engine::set_eventCallback" name="Engine::set_eventCallback">
+<area shape="rect" id="Node000001" title="Налаштовує обробники подій" alt="" coords="141,5,320,31"/>
+<area shape="rect" id="Node000002" href="$classEngine.html#a8810408127b79c306e6fa2131aea46e2" title="Запускає основний цикл движка" alt="" coords="5,5,93,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,21,94,21,94,15,128,15"/>
+</map>

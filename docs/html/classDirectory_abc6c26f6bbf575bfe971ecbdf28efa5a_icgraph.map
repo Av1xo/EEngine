@@ -1,0 +1,8 @@
+<map id="Directory::listDirectories" name="Directory::listDirectories">
+<area shape="rect" id="Node000001" title="Повертає список піддиректорій." alt="" coords="188,55,351,80"/>
+<area shape="rect" id="Node000002" href="$classDirectory.html#a34240fb848fe80438cad603ea4b837bb" title="Видаляє директорію." alt="" coords="5,29,140,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,58,140,53,141,48,175,52"/>
+<area shape="rect" id="Node000003" href="$classDirectory.html#a2e3d59e9340e851ab78fd359facf0945" title="Повертає список усіх об&#39;єктів (файли + директорії)." alt="" coords="15,79,130,104"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="175,82,130,87,130,82,174,76"/>
+<area shape="poly" id="edge2_Node000002_Node000002" title=" " alt="" coords="107,19,97,11,73,8,52,10,41,15,39,20,45,28,41,31,34,21,37,11,51,5,73,3,99,6,111,15"/>
+</map>

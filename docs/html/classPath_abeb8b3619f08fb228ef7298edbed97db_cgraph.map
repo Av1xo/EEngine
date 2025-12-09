@@ -1,0 +1,5 @@
+<map id="Path::join" name="Path::join">
+<area shape="rect" id="Node000001" title="Об&#39;єднує два шляхи в один." alt="" coords="5,5,83,31"/>
+<area shape="rect" id="Node000002" href="$classPath.html#a4ac32f60a8c773877af18c39bd28aec9" title="Нормалізує шлях (змінює роздільники, видаляє зайві елементи)." alt="" coords="131,5,244,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="83,15,117,15,117,21,83,21"/>
+</map>

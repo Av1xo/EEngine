@@ -1,0 +1,5 @@
+<map id="Time::init" name="Time::init">
+<area shape="rect" id="Node000001" title="Ініціалізує систему часу" alt="" coords="140,5,216,31"/>
+<area shape="rect" id="Node000002" href="$classEngine.html#ad9cbbe62250781d3026eceebf4760c35" title="Ініціалізує рушій та створює вікно" alt="" coords="5,5,92,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,21,92,21,92,15,126,15"/>
+</map>

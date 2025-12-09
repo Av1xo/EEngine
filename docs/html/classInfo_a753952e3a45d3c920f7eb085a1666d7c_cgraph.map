@@ -1,0 +1,5 @@
+<map id="Info::GetOSName" name="Info::GetOSName">
+<area shape="rect" id="Node000001" title="Повертає назву операційної системи у вигляді рядка." alt="" coords="5,5,132,31"/>
+<area shape="rect" id="Node000002" href="$classInfo.html#a3c9e59acef2b109a2ebd1c57b89e7eb4" title="Повертає операційну систему." alt="" coords="180,5,272,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="132,15,166,15,166,21,132,21"/>
+</map>

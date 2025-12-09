@@ -1,0 +1,23 @@
+<map id="Directory::deleteDir" name="Directory::deleteDir">
+<area shape="rect" id="Node000001" title="Видаляє директорію." alt="" coords="5,104,140,129"/>
+<area shape="poly" id="edge1_Node000001_Node000001" title=" " alt="" coords="41,105,34,96,37,86,51,80,73,77,99,81,111,90,107,94,97,86,73,83,52,85,41,89,39,95,45,102"/>
+<area shape="rect" id="Node000002" href="$classFile.html#a6cd4aedfb30038c67709cfbd4f9bdea5" title="Видаляє файл." alt="" coords="216,5,323,31"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="89,102,132,71,187,40,204,33,206,38,189,44,134,76,92,106"/>
+<area shape="rect" id="Node000003" href="$classDirectory.html#a3dac4b458637adfd6e70a59219fbd73a" title="Перевіряє, чи існує директорія." alt="" coords="210,55,329,80"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="123,101,204,81,206,86,125,107"/>
+<area shape="rect" id="Node000005" href="$classPath.html#abeb8b3619f08fb228ef7298edbed97db" title="Об&#39;єднує два шляхи в один." alt="" coords="417,155,495,180"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="129,127,188,138,304,152,404,161,403,167,303,158,188,143,128,132"/>
+<area shape="rect" id="Node000007" href="$classDirectory.html#abc6c26f6bbf575bfe971ecbdf28efa5a" title="Повертає список піддиректорій." alt="" coords="188,104,351,129"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="140,114,174,114,174,119,140,119"/>
+<area shape="rect" id="Node000008" href="$classDirectory.html#a4b5c9d8f8845733e10ce19bfe8daf1aa" title="Повертає список файлів у директорії." alt="" coords="205,205,333,231"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="94,127,137,154,189,184,221,198,219,203,187,188,134,159,91,132"/>
+<area shape="rect" id="Node000004" href="$classFile.html#ab999dfb94de904566a8e21904179e1c6" title="Перевіряє, чи є шлях директорією." alt="" coords="399,80,513,105"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="329,73,385,80,384,86,329,78"/>
+<area shape="rect" id="Node000006" href="$classPath.html#a4ac32f60a8c773877af18c39bd28aec9" title="Нормалізує шлях (змінює роздільники, видаляє зайві елементи)." alt="" coords="561,155,675,180"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="495,165,547,165,547,170,495,170"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="350,104,385,99,385,104,351,109"/>
+<area shape="poly" id="edge9_Node000007_Node000005" title=" " alt="" coords="318,127,404,151,403,156,316,132"/>
+<area shape="poly" id="edge12_Node000008_Node000005" title=" " alt="" coords="316,203,403,179,404,184,318,208"/>
+<area shape="rect" id="Node000009" href="$classFile.html#ab4696174d655d6351e5112499bfa7b6d" title="Перевіряє, чи є шлях файлом." alt="" coords="415,205,497,231"/>
+<area shape="poly" id="edge11_Node000008_Node000009" title=" " alt="" coords="333,215,401,215,401,221,333,221"/>
+</map>

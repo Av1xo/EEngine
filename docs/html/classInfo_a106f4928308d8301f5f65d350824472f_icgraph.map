@@ -1,0 +1,5 @@
+<map id="Info::GetCompiler" name="Info::GetCompiler">
+<area shape="rect" id="Node000001" title="Повертає компілятор." alt="" coords="213,5,339,31"/>
+<area shape="rect" id="Node000002" href="$classInfo.html#a2a94dfaef6cf0926416a83d7fc7ca8f6" title="Повертає назву компілятора у вигляді рядка." alt="" coords="5,5,165,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,21,166,21,166,15,200,15"/>
+</map>

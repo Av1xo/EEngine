@@ -1,0 +1,16 @@
+<map id="File::isDirectory" name="File::isDirectory">
+<area shape="rect" id="Node000001" title="Перевіряє, чи є шлях директорією." alt="" coords="443,104,557,129"/>
+<area shape="rect" id="Node000002" href="$classDirectory.html#a3dac4b458637adfd6e70a59219fbd73a" title="Перевіряє, чи існує директорія." alt="" coords="254,79,373,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="428,110,373,102,373,97,429,104"/>
+<area shape="rect" id="Node000005" href="$classDirectory.html#abc6c26f6bbf575bfe971ecbdf28efa5a" title="Повертає список піддиректорій." alt="" coords="232,128,395,153"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="429,128,395,133,395,128,429,123"/>
+<area shape="rect" id="Node000003" href="$classDirectory.html#a0412509f5fa1efa9e98014032526a946" title="Рекурсивно створює директорію та усі проміжні шляхи." alt="" coords="5,29,184,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="243,78,151,57,152,52,244,73"/>
+<area shape="rect" id="Node000004" href="$classDirectory.html#a34240fb848fe80438cad603ea4b837bb" title="Видаляє директорію." alt="" coords="27,103,162,128"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="241,102,162,111,162,105,240,97"/>
+<area shape="poly" id="edge3_Node000003_Node000003" title=" " alt="" coords="134,20,123,11,95,8,71,10,59,15,56,20,63,28,59,31,51,21,55,11,70,5,95,3,125,6,137,15"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="134,93,123,85,95,81,71,83,59,88,56,94,63,101,59,104,51,94,55,84,70,78,95,76,125,80,137,89"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="218,132,162,126,162,120,218,127"/>
+<area shape="rect" id="Node000006" href="$classDirectory.html#a2e3d59e9340e851ab78fd359facf0945" title="Повертає список усіх об&#39;єктів (файли + директорії)." alt="" coords="37,152,152,177"/>
+<area shape="poly" id="edge8_Node000005_Node000006" title=" " alt="" coords="218,154,153,161,152,156,217,148"/>
+</map>

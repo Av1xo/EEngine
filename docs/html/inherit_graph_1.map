@@ -1,0 +1,13 @@
+<map id="Графічна ієрархія класів" name="Графічна ієрархія класів">
+<area shape="rect" id="Node000000" href="$structBaseEvent.html" title="Базова структура для всіх подій" alt="" coords="5,104,92,129"/>
+<area shape="rect" id="Node000001" href="$structEventKeyPressed.html" title="Подія натискання клавіші" alt="" coords="149,5,275,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="70,93,101,65,139,40,164,28,166,33,141,44,104,70,74,97"/>
+<area shape="rect" id="Node000002" href="$structEventKeyReleased.html" title="Подія відпускання клавіші" alt="" coords="145,55,279,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="104,97,168,78,170,83,106,102"/>
+<area shape="rect" id="Node000003" href="$structEventMouseMoved.html" title="Подія руху миші" alt="" coords="145,104,279,129"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="106,114,144,114,144,119,106,119"/>
+<area shape="rect" id="Node000004" href="$structEventWindowClose.html" title="Подія закриття вікна" alt="" coords="143,153,281,179"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="106,131,170,151,168,156,104,136"/>
+<area shape="rect" id="Node000005" href="$structEventWindowResize.html" title="Подія зміни розміру вікна" alt="" coords="140,203,284,228"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="74,137,105,163,141,188,169,200,167,205,139,192,102,167,71,141"/>
+</map>

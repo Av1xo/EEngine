@@ -1,0 +1,5 @@
+<map id="Input::init" name="Input::init">
+<area shape="rect" id="Node000001" title="Ініціалізація Input та підписка на EventDispatcher." alt="" coords="5,13,81,38"/>
+<area shape="rect" id="Node000002" href="$classEventDispatcher.html#a68e25d450994fbfefed8f51aa01d031b" title="Додає обробник події до диспетчера" alt="" coords="129,5,277,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,23,115,23,115,28,82,28"/>
+</map>

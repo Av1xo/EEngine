@@ -1,0 +1,7 @@
+<map id="EventDispatcher::add_event_listener" name="EventDispatcher::add_event_listener">
+<area shape="rect" id="Node000001" title="Додає обробник події до диспетчера" alt="" coords="264,5,412,45"/>
+<area shape="rect" id="Node000002" href="$classInput.html#a391abd9246617ecc1d7c5ad72ec40435" title="Ініціалізація Input та підписка на EventDispatcher." alt="" coords="140,13,216,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,28,216,28,216,23,250,23"/>
+<area shape="rect" id="Node000003" href="$classEngine.html#ad9cbbe62250781d3026eceebf4760c35" title="Ініціалізує рушій та створює вікно" alt="" coords="5,13,92,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="126,28,92,28,92,23,126,23"/>
+</map>

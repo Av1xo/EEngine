@@ -1,5 +1,9 @@
 #pragma once
 
+/**
+ * @brief Уніфіковані кейкоди
+ * 
+ */
 enum class KeyCode
 {
     Unknown,

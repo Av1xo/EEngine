@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EverEngine: Текст програми Input.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EverEngine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_51b238f716ccac9754f5c9c67f8991cb.html">EverEngineCore</a></li><li class="navelem"><a class="el" href="dir_28f8b52f866baa3d2c594448693c1f7b.html">platform</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Input.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Input_8h.html">Див. документацію.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="Keyboard_8h.html">EverEngineCore/platform/Keyboard.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="Event_8h.html">EverEngineCore/core/Event.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;array&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="classInput.html">   15</a></span><span class="keyword">class </span><a class="code hl_class" href="classInput.html">Input</a></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classInput.html#a962231d0107441f21764b1fbf0bc2ead">   19</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classInput.html#a962231d0107441f21764b1fbf0bc2ead">KeyEventCallback</a> = std::function&lt;void()&gt;;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classInput.html#a391abd9246617ecc1d7c5ad72ec40435">init</a>(<a class="code hl_class" href="classEventDispatcher.html">EventDispatcher</a>&amp; dispatcher);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classInput.html#a2f90b4722512f03f79b5efc1688e5036">onKeyPressed</a>(<a class="code hl_enumeration" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> code, <a class="code hl_typedef" href="classInput.html#a962231d0107441f21764b1fbf0bc2ead">KeyEventCallback</a> callback);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classInput.html#aea4d429e72adb787c96ac5146bf81485">onKeyReleased</a>(<a class="code hl_enumeration" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> code, <a class="code hl_typedef" href="classInput.html#a962231d0107441f21764b1fbf0bc2ead">KeyEventCallback</a> callback);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classInput.html#aadafbc34bdb7b5b5fcc1bf442f16f2c4">isKeyDown</a>(<a class="code hl_enumeration" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> key) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classInput.html#ab831dac9c32f59a85e695aeb79e30ec0">isKeyUp</a>(<a class="code hl_enumeration" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> key) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classInput.html#a6872a9ed921fd650bca8765451ceb459">wasKeyPressedThisFrame</a>(<a class="code hl_enumeration" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> key) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classInput.html#a819b3743ce8f2cf6a0e2625946635b1d">wasKeyReleasedThisFrame</a>(<a class="code hl_enumeration" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> key) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="classInput.html#a384e2a8bbbce371ffbe070bc577890cd">isKeyRepeated</a>(<a class="code hl_enumeration" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> key) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classInput.html#a5490a2f448800b31835d5486690ae26a">endFrame</a>();</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keyword">struct </span>KeyState</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordtype">bool</span> down = <span class="keyword">false</span>;             </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordtype">bool</span> pressedThisFrame = <span class="keyword">false</span>; </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordtype">bool</span> releasedThisFrame = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordtype">bool</span> repeated = <span class="keyword">false</span>;         </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    };</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">size_t</span> KEY_COUNT = <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(<a class="code hl_enumvalue" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2a358cfe58715d680d9ab09f82e4010cbc">KeyCode::Slash</a>) + 1; </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    std::array&lt;KeyState, KEY_COUNT&gt; m_keyStates{}; </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    std::array&lt;std::vector&lt;KeyEventCallback&gt;, KEY_COUNT&gt; m_pressCallbacks;   </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    std::array&lt;std::vector&lt;KeyEventCallback&gt;, KEY_COUNT&gt; m_releaseCallbacks; </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">void</span> handleKeyPressed(<a class="code hl_struct" href="structEventKeyPressed.html">EventKeyPressed</a>&amp; e);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordtype">void</span> handleKeyReleased(<a class="code hl_struct" href="structEventKeyReleased.html">EventKeyReleased</a>&amp; e);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">size_t</span> toIndex(<a class="code hl_enumeration" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> key) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>};</div>
+</div>
+<div class="ttc" id="aEvent_8h_html"><div class="ttname"><a href="Event_8h.html">Event.h</a></div></div>
+<div class="ttc" id="aKeyboard_8h_html"><div class="ttname"><a href="Keyboard_8h.html">Keyboard.h</a></div></div>
+<div class="ttc" id="aKeyboard_8h_html_a7885f47644a0388f981f416fa20389b2"><div class="ttname"><a href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a></div><div class="ttdeci">KeyCode</div><div class="ttdoc">Уніфіковані кейкоди</div><div class="ttdef"><b>Definition</b> Keyboard.h:8</div></div>
+<div class="ttc" id="aKeyboard_8h_html_a7885f47644a0388f981f416fa20389b2a358cfe58715d680d9ab09f82e4010cbc"><div class="ttname"><a href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2a358cfe58715d680d9ab09f82e4010cbc">KeyCode::Slash</a></div><div class="ttdeci">@ Slash</div></div>
+<div class="ttc" id="aclassEventDispatcher_html"><div class="ttname"><a href="classEventDispatcher.html">EventDispatcher</a></div><div class="ttdoc">Диспетчер подій для централізованої обробки системних повідомлень</div><div class="ttdef"><b>Definition</b> Event.h:62</div></div>
+<div class="ttc" id="aclassInput_html"><div class="ttname"><a href="classInput.html">Input</a></div><div class="ttdoc">Клас для обробки введення з клавіатури.</div><div class="ttdef"><b>Definition</b> Input.h:16</div></div>
+<div class="ttc" id="aclassInput_html_a2f90b4722512f03f79b5efc1688e5036"><div class="ttname"><a href="classInput.html#a2f90b4722512f03f79b5efc1688e5036">Input::onKeyPressed</a></div><div class="ttdeci">void onKeyPressed(KeyCode code, KeyEventCallback callback)</div><div class="ttdoc">Додає колбек на подію натискання клавіші.</div><div class="ttdef"><b>Definition</b> Input.cpp:57</div></div>
+<div class="ttc" id="aclassInput_html_a384e2a8bbbce371ffbe070bc577890cd"><div class="ttname"><a href="classInput.html#a384e2a8bbbce371ffbe070bc577890cd">Input::isKeyRepeated</a></div><div class="ttdeci">bool isKeyRepeated(KeyCode key) const</div><div class="ttdoc">Перевіряє, чи клавіша була повторно натиснута (repeat).</div><div class="ttdef"><b>Definition</b> Input.cpp:102</div></div>
+<div class="ttc" id="aclassInput_html_a391abd9246617ecc1d7c5ad72ec40435"><div class="ttname"><a href="classInput.html#a391abd9246617ecc1d7c5ad72ec40435">Input::init</a></div><div class="ttdeci">void init(EventDispatcher &amp;dispatcher)</div><div class="ttdoc">Ініціалізація Input та підписка на EventDispatcher.</div><div class="ttdef"><b>Definition</b> Input.cpp:3</div></div>
+<div class="ttc" id="aclassInput_html_a5490a2f448800b31835d5486690ae26a"><div class="ttname"><a href="classInput.html#a5490a2f448800b31835d5486690ae26a">Input::endFrame</a></div><div class="ttdeci">void endFrame()</div><div class="ttdoc">Завершення кадру. Очищає стан натискань/відпускань поточного кадру.</div><div class="ttdef"><b>Definition</b> Input.cpp:110</div></div>
+<div class="ttc" id="aclassInput_html_a6872a9ed921fd650bca8765451ceb459"><div class="ttname"><a href="classInput.html#a6872a9ed921fd650bca8765451ceb459">Input::wasKeyPressedThisFrame</a></div><div class="ttdeci">bool wasKeyPressedThisFrame(KeyCode key) const</div><div class="ttdoc">Перевіряє, чи клавіша була натиснута у поточному кадрі.</div><div class="ttdef"><b>Definition</b> Input.cpp:86</div></div>
+<div class="ttc" id="aclassInput_html_a819b3743ce8f2cf6a0e2625946635b1d"><div class="ttname"><a href="classInput.html#a819b3743ce8f2cf6a0e2625946635b1d">Input::wasKeyReleasedThisFrame</a></div><div class="ttdeci">bool wasKeyReleasedThisFrame(KeyCode key) const</div><div class="ttdoc">Перевіряє, чи клавіша була відпущена у поточному кадрі.</div><div class="ttdef"><b>Definition</b> Input.cpp:94</div></div>
+<div class="ttc" id="aclassInput_html_a962231d0107441f21764b1fbf0bc2ead"><div class="ttname"><a href="classInput.html#a962231d0107441f21764b1fbf0bc2ead">Input::KeyEventCallback</a></div><div class="ttdeci">std::function&lt; void()&gt; KeyEventCallback</div><div class="ttdoc">Тип колбеку для обробки подій клавіш</div><div class="ttdef"><b>Definition</b> Input.h:19</div></div>
+<div class="ttc" id="aclassInput_html_aadafbc34bdb7b5b5fcc1bf442f16f2c4"><div class="ttname"><a href="classInput.html#aadafbc34bdb7b5b5fcc1bf442f16f2c4">Input::isKeyDown</a></div><div class="ttdeci">bool isKeyDown(KeyCode key) const</div><div class="ttdoc">Перевіряє, чи клавіша зараз натиснута.</div><div class="ttdef"><b>Definition</b> Input.cpp:73</div></div>
+<div class="ttc" id="aclassInput_html_ab831dac9c32f59a85e695aeb79e30ec0"><div class="ttname"><a href="classInput.html#ab831dac9c32f59a85e695aeb79e30ec0">Input::isKeyUp</a></div><div class="ttdeci">bool isKeyUp(KeyCode key) const</div><div class="ttdoc">Перевіряє, чи клавіша зараз відпущена.</div><div class="ttdef"><b>Definition</b> Input.cpp:81</div></div>
+<div class="ttc" id="aclassInput_html_aea4d429e72adb787c96ac5146bf81485"><div class="ttname"><a href="classInput.html#aea4d429e72adb787c96ac5146bf81485">Input::onKeyReleased</a></div><div class="ttdeci">void onKeyReleased(KeyCode code, KeyEventCallback callback)</div><div class="ttdoc">Додає колбек на подію відпускання клавіші.</div><div class="ttdef"><b>Definition</b> Input.cpp:65</div></div>
+<div class="ttc" id="astructEventKeyPressed_html"><div class="ttname"><a href="structEventKeyPressed.html">EventKeyPressed</a></div><div class="ttdoc">Подія натискання клавіші</div><div class="ttdef"><b>Definition</b> Event.h:229</div></div>
+<div class="ttc" id="astructEventKeyReleased_html"><div class="ttname"><a href="structEventKeyReleased.html">EventKeyReleased</a></div><div class="ttdoc">Подія відпускання клавіші</div><div class="ttdef"><b>Definition</b> Event.h:263</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

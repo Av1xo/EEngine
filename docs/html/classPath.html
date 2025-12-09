@@ -1,0 +1,444 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EverEngine: Клас Path</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EverEngine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-static-methods">Загальнодоступні статичні елементи</a> &#124;
+<a href="#pub-static-attribs">Статичні загальнодоступні данні</a> &#124;
+<a href="classPath-members.html">Список всіх елементів</a>  </div>
+  <div class="headertitle"><div class="title">Клас Path</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Утилітний клас для роботи з шляхами файлів та директорій.  
+ <a href="classPath.html#details">Детальніше...</a></p>
+
+<p><code>#include &lt;<a class="el" href="FileSystem_8h_source.html">FileSystem.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Загальнодоступні статичні елементи</h2></td></tr>
+<tr class="memitem:a4ac32f60a8c773877af18c39bd28aec9" id="r_a4ac32f60a8c773877af18c39bd28aec9"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a4ac32f60a8c773877af18c39bd28aec9">normalize</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a4ac32f60a8c773877af18c39bd28aec9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Нормалізує шлях (змінює роздільники, видаляє зайві елементи).  <br /></td></tr>
+<tr class="separator:a4ac32f60a8c773877af18c39bd28aec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb8b3619f08fb228ef7298edbed97db" id="r_abeb8b3619f08fb228ef7298edbed97db"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#abeb8b3619f08fb228ef7298edbed97db">join</a> (const std::string &amp;a, const std::string &amp;b)</td></tr>
+<tr class="memdesc:abeb8b3619f08fb228ef7298edbed97db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Об'єднує два шляхи в один.  <br /></td></tr>
+<tr class="separator:abeb8b3619f08fb228ef7298edbed97db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b720418f1de5c460e3bfe5210e7eef" id="r_a48b720418f1de5c460e3bfe5210e7eef"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a48b720418f1de5c460e3bfe5210e7eef">getDirectory</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a48b720418f1de5c460e3bfe5210e7eef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає директорію з повного шляху.  <br /></td></tr>
+<tr class="separator:a48b720418f1de5c460e3bfe5210e7eef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accee7016deac4a17288aac72560ba205" id="r_accee7016deac4a17288aac72560ba205"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#accee7016deac4a17288aac72560ba205">getFilename</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:accee7016deac4a17288aac72560ba205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає ім'я файлу з шляху.  <br /></td></tr>
+<tr class="separator:accee7016deac4a17288aac72560ba205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44c5f85d26d52863c8f88dd560ff4ad3" id="r_a44c5f85d26d52863c8f88dd560ff4ad3"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a44c5f85d26d52863c8f88dd560ff4ad3">getExtention</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a44c5f85d26d52863c8f88dd560ff4ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає розширення файлу (без крапки).  <br /></td></tr>
+<tr class="separator:a44c5f85d26d52863c8f88dd560ff4ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37ed8c0352543194442d2b457f9fc945" id="r_a37ed8c0352543194442d2b457f9fc945"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a37ed8c0352543194442d2b457f9fc945">getFilenameWithoutExtention</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:a37ed8c0352543194442d2b457f9fc945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Повертає ім'я файлу без розширення.  <br /></td></tr>
+<tr class="separator:a37ed8c0352543194442d2b457f9fc945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af88533570e90b1bd077b53a00f52e23e" id="r_af88533570e90b1bd077b53a00f52e23e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#af88533570e90b1bd077b53a00f52e23e">isAbsolute</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:af88533570e90b1bd077b53a00f52e23e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевіряє, чи є шлях абсолютним.  <br /></td></tr>
+<tr class="separator:af88533570e90b1bd077b53a00f52e23e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Статичні загальнодоступні данні</h2></td></tr>
+<tr class="memitem:a6cd77c09eca4f2fddfa044139d168d41" id="r_a6cd77c09eca4f2fddfa044139d168d41"><td class="memItemLeft" align="right" valign="top">static const char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPath.html#a6cd77c09eca4f2fddfa044139d168d41">separator</a> = '/'</td></tr>
+<tr class="memdesc:a6cd77c09eca4f2fddfa044139d168d41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Символ роздільника шляху (залежить від платформи)  <br /></td></tr>
+<tr class="separator:a6cd77c09eca4f2fddfa044139d168d41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p>Утилітний клас для роботи з шляхами файлів та директорій. </p>
+</div><h2 class="groupheader">Опис методів компонент</h2>
+<a id="a48b720418f1de5c460e3bfe5210e7eef" name="a48b720418f1de5c460e3bfe5210e7eef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48b720418f1de5c460e3bfe5210e7eef">&#9670;&#160;</a></span>getDirectory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Path::getDirectory </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає директорію з повного шляху. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Вхідний шлях. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Директорія як рядок. </dd></dl>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classPath_a48b720418f1de5c460e3bfe5210e7eef_icgraph.svg" width="366" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a44c5f85d26d52863c8f88dd560ff4ad3" name="a44c5f85d26d52863c8f88dd560ff4ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44c5f85d26d52863c8f88dd560ff4ad3">&#9670;&#160;</a></span>getExtention()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Path::getExtention </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає розширення файлу (без крапки). </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Вхідний шлях. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Розширення файлу. </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classPath_a44c5f85d26d52863c8f88dd560ff4ad3_cgraph.svg" width="318" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="accee7016deac4a17288aac72560ba205" name="accee7016deac4a17288aac72560ba205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accee7016deac4a17288aac72560ba205">&#9670;&#160;</a></span>getFilename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Path::getFilename </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає ім'я файлу з шляху. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Вхідний шлях. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Ім'я файлу. </dd></dl>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classPath_accee7016deac4a17288aac72560ba205_icgraph.svg" width="360" height="102"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a37ed8c0352543194442d2b457f9fc945" name="a37ed8c0352543194442d2b457f9fc945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37ed8c0352543194442d2b457f9fc945">&#9670;&#160;</a></span>getFilenameWithoutExtention()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Path::getFilenameWithoutExtention </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Повертає ім'я файлу без розширення. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Вхідний шлях. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Ім'я файлу без розширення. </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classPath_a37ed8c0352543194442d2b457f9fc945_cgraph.svg" width="360" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="af88533570e90b1bd077b53a00f52e23e" name="af88533570e90b1bd077b53a00f52e23e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af88533570e90b1bd077b53a00f52e23e">&#9670;&#160;</a></span>isAbsolute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Path::isAbsolute </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перевіряє, чи є шлях абсолютним. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Вхідний шлях. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо шлях абсолютний, інакше false. </dd></dl>
+
+</div>
+</div>
+<a id="abeb8b3619f08fb228ef7298edbed97db" name="abeb8b3619f08fb228ef7298edbed97db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeb8b3619f08fb228ef7298edbed97db">&#9670;&#160;</a></span>join()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Path::join </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Об'єднує два шляхи в один. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>Перший шлях. </td></tr>
+    <tr><td class="paramname">b</td><td>Другий шлях. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Об'єднаний шлях. </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classPath_abeb8b3619f08fb228ef7298edbed97db_cgraph.svg" width="250" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classPath_abeb8b3619f08fb228ef7298edbed97db_icgraph.svg" width="482" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a4ac32f60a8c773877af18c39bd28aec9" name="a4ac32f60a8c773877af18c39bd28aec9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac32f60a8c773877af18c39bd28aec9">&#9670;&#160;</a></span>normalize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Path::normalize </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Нормалізує шлях (змінює роздільники, видаляє зайві елементи). </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">path</td><td>Вхідний шлях. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>Нормалізований шлях. </dd></dl>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classPath_a4ac32f60a8c773877af18c39bd28aec9_icgraph.svg" width="643" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Компонентні дані</h2>
+<a id="a6cd77c09eca4f2fddfa044139d168d41" name="a6cd77c09eca4f2fddfa044139d168d41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cd77c09eca4f2fddfa044139d168d41">&#9670;&#160;</a></span>separator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char Path::separator = '/'</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Символ роздільника шляху (залежить від платформи) </p>
+
+</div>
+</div>
+<hr/>Документація цих класів була створена з файлів:<ul>
+<li><a class="el" href="FileSystem_8h_source.html">FileSystem.h</a></li>
+<li><a class="el" href="FileSystem_8cpp.html">FileSystem.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

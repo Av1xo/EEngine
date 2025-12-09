@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EverEngine: Текст програми Platform.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EverEngine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_51b238f716ccac9754f5c9c67f8991cb.html">EverEngineCore</a></li><li class="navelem"><a class="el" href="dir_28f8b52f866baa3d2c594448693c1f7b.html">platform</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Platform.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="Platform_8h.html">Див. документацію.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#if defined(_WIN32) || defined(_WIN64)</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">    #define PLATFORM_WINDOWS</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">    #ifdef _WIN64</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">        #define PLATFORM_64BIT</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">    #else</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">        #define PLATFORM_32BIT</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#elif defined(__linux__)</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">    #define PLATFORM_LINUX</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">    #if defined(__x86_64__) || defined(__aarch64__)</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">        #define PLATFORM_64BIT</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">    #else</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">        #define PLATFORM_32BIT</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#elif defined(__APPLE__)</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">    #include &lt;TargetConditionals.h&gt;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">    #if TARGET_OS_MAC</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">        #define PLATFORM_MACOS</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">    #endif</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">    #define PLATFORM_64BIT</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="Platform_8h.html#a8e581b101ce12660f12591291f5c72f6">   29</a></span><span class="preprocessor">    #define PLATFORM_UNKNOWN</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#if defined(_MSC_VER)</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">    #define COMPILER_MSVC</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#elif defined(__GNUC__) || defined(__GNUG__)</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">    #define COMPILER_GCC</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#elif defined(__clang__)</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">    #define COMPILER_CLANG</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#if defined(_DEBUG) || defined(DEBUG)</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">    #define BUILD_DEBUG</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="Platform_8h.html#a962258f08e30f89054491f457d225aaf">   49</a></span><span class="preprocessor">    #define BUILD_RELEASE</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="};">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791">   55</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791">OS</a> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_enumvalue" href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791aaea23489ce3aa9b6406ebb28e0cda430">Windows</a>,   </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_enumvalue" href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791aedc9f0a5a5d57797bf68e37364743831">Linux</a>,     </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_enumvalue" href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791a0a5b7edb55b772c60bfa8af868b679cf">MacOS</a>,     </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_enumvalue" href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>    </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="};">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1a">   65</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1a">Architecture</a> {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_enumvalue" href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1aa8a9da7865483c5fd359f3acef178d26d">x86</a>,    </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_enumvalue" href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1aa9c16d991c79c6330e655aa29ea623492">x64</a>,    </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_enumvalue" href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1aa47f45e65244c17ec9fa8771a5c6d60e1">ARM</a>,    </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <a class="code hl_enumvalue" href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1aab9b55c80d095761ac7757ced0fedadc4">ARM64</a>,  </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_enumvalue" href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>};</div>
+</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="};">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="Platform_8h.html#a2b27459cb725f0734e6a1eae130ae8cd">   76</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="Platform_8h.html#a2b27459cb725f0734e6a1eae130ae8cd">Compiler</a> {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <a class="code hl_enumvalue" href="Platform_8h.html#a2b27459cb725f0734e6a1eae130ae8cda0f51fc6751dcde1d4bb3760fcf465689">MSVC</a>,    </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <a class="code hl_enumvalue" href="Platform_8h.html#a2b27459cb725f0734e6a1eae130ae8cda32d8b233e3c58a262a0b75872297d8d5">GCC</a>,     </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <a class="code hl_enumvalue" href="Platform_8h.html#a2b27459cb725f0734e6a1eae130ae8cda9375884cf4ed31c834a626c324dddc67">Clang</a>,   </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <a class="code hl_enumvalue" href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>  </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="foldopen" id="foldopen00086" data-start="{" data-end="};">
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="Platform_8h.html#adbbd81b021d894f42dfb9a71dc24230d">   86</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="Platform_8h.html#adbbd81b021d894f42dfb9a71dc24230d">BuildType</a> {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <a class="code hl_enumvalue" href="Platform_8h.html#adbbd81b021d894f42dfb9a71dc24230daa603905470e2a5b8c13e96b579ef0dba">Debug</a>,    </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_enumvalue" href="Platform_8h.html#adbbd81b021d894f42dfb9a71dc24230dab8e7b465df7c5979dc731d06e84ce2cf">Release</a>   </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="};">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classInfo.html">   94</a></span><span class="keyword">class </span><a class="code hl_class" href="classInfo.html">Info</a></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>{</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    <span class="keyword">static</span> <a class="code hl_enumeration" href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791">OS</a> <a class="code hl_function" href="classInfo.html#a3c9e59acef2b109a2ebd1c57b89e7eb4">GetOS</a>();</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">static</span> <a class="code hl_enumeration" href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1a">Architecture</a> <a class="code hl_function" href="classInfo.html#a5b338f0539c4cee2e8b6ab7a62ec066c">GetArchitecture</a>();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">static</span> <a class="code hl_enumeration" href="Platform_8h.html#a2b27459cb725f0734e6a1eae130ae8cd">Compiler</a> <a class="code hl_function" href="classInfo.html#a106f4928308d8301f5f65d350824472f">GetCompiler</a>();</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">static</span> <a class="code hl_enumeration" href="Platform_8h.html#adbbd81b021d894f42dfb9a71dc24230d">BuildType</a> <a class="code hl_function" href="classInfo.html#abfa9f3fd46058429eb38fccc47603d5a">GetBuildType</a>();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="classInfo.html#a753952e3a45d3c920f7eb085a1666d7c">GetOSName</a>();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="classInfo.html#a9224dd2898e3e60c256bb48b1108a792">GetArchitectureName</a>();</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="classInfo.html#a2a94dfaef6cf0926416a83d7fc7ca8f6">GetCompilerName</a>();</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classInfo.html#ab43254ddc12c629f551574879d81baf4">IsWindows</a>();</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classInfo.html#a6a0da5b1159b01b1ac383121ca92b151">IsLinux</a>();</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classInfo.html#a71d5289321fb662bc2ad93448b96b26c">IsMacOS</a>();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classInfo.html#a815a8ee4ef83d178a266524b3bcb7304">IsDebug</a>();</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classInfo.html#a1078bfa6b8250be3a250569b5d178bb6">Is64Bit</a>();</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classInfo.html#af03913e646cea4fa4ff90677225e6075">Print</a>();</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>};</div>
+</div>
+<div class="ttc" id="aPlatform_8h_html_a2b27459cb725f0734e6a1eae130ae8cd"><div class="ttname"><a href="Platform_8h.html#a2b27459cb725f0734e6a1eae130ae8cd">Compiler</a></div><div class="ttdeci">Compiler</div><div class="ttdoc">Перелік компіляторів.</div><div class="ttdef"><b>Definition</b> Platform.h:76</div></div>
+<div class="ttc" id="aPlatform_8h_html_a2b27459cb725f0734e6a1eae130ae8cda0f51fc6751dcde1d4bb3760fcf465689"><div class="ttname"><a href="Platform_8h.html#a2b27459cb725f0734e6a1eae130ae8cda0f51fc6751dcde1d4bb3760fcf465689">Compiler::MSVC</a></div><div class="ttdeci">@ MSVC</div><div class="ttdoc">Microsoft Visual C++.</div></div>
+<div class="ttc" id="aPlatform_8h_html_a2b27459cb725f0734e6a1eae130ae8cda32d8b233e3c58a262a0b75872297d8d5"><div class="ttname"><a href="Platform_8h.html#a2b27459cb725f0734e6a1eae130ae8cda32d8b233e3c58a262a0b75872297d8d5">Compiler::GCC</a></div><div class="ttdeci">@ GCC</div><div class="ttdoc">GCC.</div></div>
+<div class="ttc" id="aPlatform_8h_html_a2b27459cb725f0734e6a1eae130ae8cda9375884cf4ed31c834a626c324dddc67"><div class="ttname"><a href="Platform_8h.html#a2b27459cb725f0734e6a1eae130ae8cda9375884cf4ed31c834a626c324dddc67">Compiler::Clang</a></div><div class="ttdeci">@ Clang</div><div class="ttdoc">Clang/LLVM.</div></div>
+<div class="ttc" id="aPlatform_8h_html_a839343ab50872ef45ab3122c940cbe1a"><div class="ttname"><a href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1a">Architecture</a></div><div class="ttdeci">Architecture</div><div class="ttdoc">Перелік архітектур процесора.</div><div class="ttdef"><b>Definition</b> Platform.h:65</div></div>
+<div class="ttc" id="aPlatform_8h_html_a839343ab50872ef45ab3122c940cbe1aa47f45e65244c17ec9fa8771a5c6d60e1"><div class="ttname"><a href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1aa47f45e65244c17ec9fa8771a5c6d60e1">Architecture::ARM</a></div><div class="ttdeci">@ ARM</div><div class="ttdoc">ARM 32-біт</div></div>
+<div class="ttc" id="aPlatform_8h_html_a839343ab50872ef45ab3122c940cbe1aa8a9da7865483c5fd359f3acef178d26d"><div class="ttname"><a href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1aa8a9da7865483c5fd359f3acef178d26d">Architecture::x86</a></div><div class="ttdeci">@ x86</div><div class="ttdoc">32-біт</div></div>
+<div class="ttc" id="aPlatform_8h_html_a839343ab50872ef45ab3122c940cbe1aa9c16d991c79c6330e655aa29ea623492"><div class="ttname"><a href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1aa9c16d991c79c6330e655aa29ea623492">Architecture::x64</a></div><div class="ttdeci">@ x64</div><div class="ttdoc">64-біт</div></div>
+<div class="ttc" id="aPlatform_8h_html_a839343ab50872ef45ab3122c940cbe1aab9b55c80d095761ac7757ced0fedadc4"><div class="ttname"><a href="Platform_8h.html#a839343ab50872ef45ab3122c940cbe1aab9b55c80d095761ac7757ced0fedadc4">Architecture::ARM64</a></div><div class="ttdeci">@ ARM64</div><div class="ttdoc">ARM 64-біт</div></div>
+<div class="ttc" id="aPlatform_8h_html_aa96c7f5f38b5c249059d45bc343fd791"><div class="ttname"><a href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791">OS</a></div><div class="ttdeci">OS</div><div class="ttdoc">Перелік підтримуваних операційних систем.</div><div class="ttdef"><b>Definition</b> Platform.h:55</div></div>
+<div class="ttc" id="aPlatform_8h_html_aa96c7f5f38b5c249059d45bc343fd791a0a5b7edb55b772c60bfa8af868b679cf"><div class="ttname"><a href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791a0a5b7edb55b772c60bfa8af868b679cf">OS::MacOS</a></div><div class="ttdeci">@ MacOS</div><div class="ttdoc">MacOS.</div></div>
+<div class="ttc" id="aPlatform_8h_html_aa96c7f5f38b5c249059d45bc343fd791a88183b946cc5f0e8c96b2e66e1c74a7e"><div class="ttname"><a href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791a88183b946cc5f0e8c96b2e66e1c74a7e">OS::Unknown</a></div><div class="ttdeci">@ Unknown</div><div class="ttdoc">Невідомо</div></div>
+<div class="ttc" id="aPlatform_8h_html_aa96c7f5f38b5c249059d45bc343fd791aaea23489ce3aa9b6406ebb28e0cda430"><div class="ttname"><a href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791aaea23489ce3aa9b6406ebb28e0cda430">OS::Windows</a></div><div class="ttdeci">@ Windows</div><div class="ttdoc">Windows.</div></div>
+<div class="ttc" id="aPlatform_8h_html_aa96c7f5f38b5c249059d45bc343fd791aedc9f0a5a5d57797bf68e37364743831"><div class="ttname"><a href="Platform_8h.html#aa96c7f5f38b5c249059d45bc343fd791aedc9f0a5a5d57797bf68e37364743831">OS::Linux</a></div><div class="ttdeci">@ Linux</div><div class="ttdoc">Linux.</div></div>
+<div class="ttc" id="aPlatform_8h_html_adbbd81b021d894f42dfb9a71dc24230d"><div class="ttname"><a href="Platform_8h.html#adbbd81b021d894f42dfb9a71dc24230d">BuildType</a></div><div class="ttdeci">BuildType</div><div class="ttdoc">Тип збірки.</div><div class="ttdef"><b>Definition</b> Platform.h:86</div></div>
+<div class="ttc" id="aPlatform_8h_html_adbbd81b021d894f42dfb9a71dc24230daa603905470e2a5b8c13e96b579ef0dba"><div class="ttname"><a href="Platform_8h.html#adbbd81b021d894f42dfb9a71dc24230daa603905470e2a5b8c13e96b579ef0dba">BuildType::Debug</a></div><div class="ttdeci">@ Debug</div><div class="ttdoc">Налагоджувальна збірка</div></div>
+<div class="ttc" id="aPlatform_8h_html_adbbd81b021d894f42dfb9a71dc24230dab8e7b465df7c5979dc731d06e84ce2cf"><div class="ttname"><a href="Platform_8h.html#adbbd81b021d894f42dfb9a71dc24230dab8e7b465df7c5979dc731d06e84ce2cf">BuildType::Release</a></div><div class="ttdeci">@ Release</div><div class="ttdoc">Релізна збірка</div></div>
+<div class="ttc" id="aclassInfo_html"><div class="ttname"><a href="classInfo.html">Info</a></div><div class="ttdoc">Клас для отримання інформації про платформу, компілятор і збірку.</div><div class="ttdef"><b>Definition</b> Platform.h:95</div></div>
+<div class="ttc" id="aclassInfo_html_a106f4928308d8301f5f65d350824472f"><div class="ttname"><a href="classInfo.html#a106f4928308d8301f5f65d350824472f">Info::GetCompiler</a></div><div class="ttdeci">static Compiler GetCompiler()</div><div class="ttdoc">Повертає компілятор.</div><div class="ttdef"><b>Definition</b> Platform.cpp:31</div></div>
+<div class="ttc" id="aclassInfo_html_a1078bfa6b8250be3a250569b5d178bb6"><div class="ttname"><a href="classInfo.html#a1078bfa6b8250be3a250569b5d178bb6">Info::Is64Bit</a></div><div class="ttdeci">static bool Is64Bit()</div><div class="ttdoc">Перевіряє, чи архітектура є 64-бітною.</div><div class="ttdef"><b>Definition</b> Platform.cpp:90</div></div>
+<div class="ttc" id="aclassInfo_html_a2a94dfaef6cf0926416a83d7fc7ca8f6"><div class="ttname"><a href="classInfo.html#a2a94dfaef6cf0926416a83d7fc7ca8f6">Info::GetCompilerName</a></div><div class="ttdeci">static const char * GetCompilerName()</div><div class="ttdoc">Повертає назву компілятора у вигляді рядка.</div><div class="ttdef"><b>Definition</b> Platform.cpp:76</div></div>
+<div class="ttc" id="aclassInfo_html_a3c9e59acef2b109a2ebd1c57b89e7eb4"><div class="ttname"><a href="classInfo.html#a3c9e59acef2b109a2ebd1c57b89e7eb4">Info::GetOS</a></div><div class="ttdeci">static OS GetOS()</div><div class="ttdoc">Повертає операційну систему.</div><div class="ttdef"><b>Definition</b> Platform.cpp:3</div></div>
+<div class="ttc" id="aclassInfo_html_a5b338f0539c4cee2e8b6ab7a62ec066c"><div class="ttname"><a href="classInfo.html#a5b338f0539c4cee2e8b6ab7a62ec066c">Info::GetArchitecture</a></div><div class="ttdeci">static Architecture GetArchitecture()</div><div class="ttdoc">Повертає архітектуру процесора.</div><div class="ttdef"><b>Definition</b> Platform.cpp:16</div></div>
+<div class="ttc" id="aclassInfo_html_a6a0da5b1159b01b1ac383121ca92b151"><div class="ttname"><a href="classInfo.html#a6a0da5b1159b01b1ac383121ca92b151">Info::IsLinux</a></div><div class="ttdeci">static bool IsLinux()</div><div class="ttdoc">Перевіряє, чи ОС є Linux.</div><div class="ttdef"><b>Definition</b> Platform.cpp:87</div></div>
+<div class="ttc" id="aclassInfo_html_a71d5289321fb662bc2ad93448b96b26c"><div class="ttname"><a href="classInfo.html#a71d5289321fb662bc2ad93448b96b26c">Info::IsMacOS</a></div><div class="ttdeci">static bool IsMacOS()</div><div class="ttdoc">Перевіряє, чи ОС є MacOS.</div><div class="ttdef"><b>Definition</b> Platform.cpp:88</div></div>
+<div class="ttc" id="aclassInfo_html_a753952e3a45d3c920f7eb085a1666d7c"><div class="ttname"><a href="classInfo.html#a753952e3a45d3c920f7eb085a1666d7c">Info::GetOSName</a></div><div class="ttdeci">static const char * GetOSName()</div><div class="ttdoc">Повертає назву операційної системи у вигляді рядка.</div><div class="ttdef"><b>Definition</b> Platform.cpp:53</div></div>
+<div class="ttc" id="aclassInfo_html_a815a8ee4ef83d178a266524b3bcb7304"><div class="ttname"><a href="classInfo.html#a815a8ee4ef83d178a266524b3bcb7304">Info::IsDebug</a></div><div class="ttdeci">static bool IsDebug()</div><div class="ttdoc">Перевіряє, чи збірка є налагоджувальною (Debug).</div><div class="ttdef"><b>Definition</b> Platform.cpp:89</div></div>
+<div class="ttc" id="aclassInfo_html_a9224dd2898e3e60c256bb48b1108a792"><div class="ttname"><a href="classInfo.html#a9224dd2898e3e60c256bb48b1108a792">Info::GetArchitectureName</a></div><div class="ttdeci">static const char * GetArchitectureName()</div><div class="ttdoc">Повертає назву архітектури у вигляді рядка.</div><div class="ttdef"><b>Definition</b> Platform.cpp:64</div></div>
+<div class="ttc" id="aclassInfo_html_ab43254ddc12c629f551574879d81baf4"><div class="ttname"><a href="classInfo.html#ab43254ddc12c629f551574879d81baf4">Info::IsWindows</a></div><div class="ttdeci">static bool IsWindows()</div><div class="ttdoc">Перевіряє, чи ОС є Windows.</div><div class="ttdef"><b>Definition</b> Platform.cpp:86</div></div>
+<div class="ttc" id="aclassInfo_html_abfa9f3fd46058429eb38fccc47603d5a"><div class="ttname"><a href="classInfo.html#abfa9f3fd46058429eb38fccc47603d5a">Info::GetBuildType</a></div><div class="ttdeci">static BuildType GetBuildType()</div><div class="ttdoc">Повертає тип збірки.</div><div class="ttdef"><b>Definition</b> Platform.cpp:44</div></div>
+<div class="ttc" id="aclassInfo_html_af03913e646cea4fa4ff90677225e6075"><div class="ttname"><a href="classInfo.html#af03913e646cea4fa4ff90677225e6075">Info::Print</a></div><div class="ttdeci">static void Print()</div><div class="ttdoc">Виводить інформацію про ОС, архітектуру, компілятор та тип збірки у консоль.</div><div class="ttdef"><b>Definition</b> Platform.cpp:97</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

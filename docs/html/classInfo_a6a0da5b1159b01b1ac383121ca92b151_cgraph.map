@@ -1,0 +1,5 @@
+<map id="Info::IsLinux" name="Info::IsLinux">
+<area shape="rect" id="Node000001" title="Перевіряє, чи ОС є Linux." alt="" coords="5,5,100,31"/>
+<area shape="rect" id="Node000002" href="$classInfo.html#a3c9e59acef2b109a2ebd1c57b89e7eb4" title="Повертає операційну систему." alt="" coords="148,5,240,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,15,134,15,134,21,100,21"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Info::GetBuildType" name="Info::GetBuildType">
+<area shape="rect" id="Node000001" title="Повертає тип збірки." alt="" coords="155,5,285,31"/>
+<area shape="rect" id="Node000002" href="$classInfo.html#a815a8ee4ef83d178a266524b3bcb7304" title="Перевіряє, чи збірка є налагоджувальною (Debug)." alt="" coords="5,5,107,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,21,107,21,107,15,141,15"/>
+</map>

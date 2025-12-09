@@ -1,0 +1,9 @@
+<map id="Engine::init" name="Engine::init">
+<area shape="rect" id="Node000001" title="Ініціалізує рушій та створює вікно" alt="" coords="5,31,92,56"/>
+<area shape="rect" id="Node000002" href="$classTime.html#ac626e60d7767728dca61c1095cb9678c" title="Ініціалізує систему часу" alt="" coords="140,5,216,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,32,126,25,127,31,93,38"/>
+<area shape="rect" id="Node000003" href="$classInput.html#a391abd9246617ecc1d7c5ad72ec40435" title="Ініціалізація Input та підписка на EventDispatcher." alt="" coords="140,55,216,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="93,49,127,55,126,60,92,54"/>
+<area shape="rect" id="Node000004" href="$classEventDispatcher.html#a68e25d450994fbfefed8f51aa01d031b" title="Додає обробник події до диспетчера" alt="" coords="264,47,412,87"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="216,65,250,65,250,70,216,70"/>
+</map>

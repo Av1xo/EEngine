@@ -1,0 +1,7 @@
+<map id="Info::GetArchitecture" name="Info::GetArchitecture">
+<area shape="rect" id="Node000001" title="Повертає архітектуру процесора." alt="" coords="232,31,375,56"/>
+<area shape="rect" id="Node000002" href="$classInfo.html#a9224dd2898e3e60c256bb48b1108a792" title="Повертає назву архітектури у вигляді рядка." alt="" coords="5,5,184,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,36,184,31,185,26,219,30"/>
+<area shape="rect" id="Node000003" href="$classInfo.html#a1078bfa6b8250be3a250569b5d178bb6" title="Перевіряє, чи архітектура є 64&#45;бітною." alt="" coords="48,55,141,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,56,142,65,141,59,218,50"/>
+</map>

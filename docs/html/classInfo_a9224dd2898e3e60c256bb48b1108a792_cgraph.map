@@ -1,0 +1,5 @@
+<map id="Info::GetArchitectureName" name="Info::GetArchitectureName">
+<area shape="rect" id="Node000001" title="Повертає назву архітектури у вигляді рядка." alt="" coords="5,5,184,31"/>
+<area shape="rect" id="Node000002" href="$classInfo.html#a5b338f0539c4cee2e8b6ab7a62ec066c" title="Повертає архітектуру процесора." alt="" coords="232,5,375,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="185,15,218,15,218,21,185,21"/>
+</map>

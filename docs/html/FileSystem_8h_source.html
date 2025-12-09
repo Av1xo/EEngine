@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EverEngine: Текст програми FileSystem.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EverEngine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_51b238f716ccac9754f5c9c67f8991cb.html">EverEngineCore</a></li><li class="navelem"><a class="el" href="dir_28f8b52f866baa3d2c594448693c1f7b.html">platform</a></li><li class="navelem"><a class="el" href="dir_ac8917bb13976152661879801a15007d.html">filesystem</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">FileSystem.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="FileSystem_8h.html">Див. документацію.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;cstdint&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="classPath.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="classPath.html">Path</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classPath.html#a4ac32f60a8c773877af18c39bd28aec9">normalize</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classPath.html#abeb8b3619f08fb228ef7298edbed97db">join</a>(<span class="keyword">const</span> std::string&amp; a, <span class="keyword">const</span> std::string&amp; b);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classPath.html#a48b720418f1de5c460e3bfe5210e7eef">getDirectory</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classPath.html#accee7016deac4a17288aac72560ba205">getFilename</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classPath.html#a44c5f85d26d52863c8f88dd560ff4ad3">getExtention</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classPath.html#a37ed8c0352543194442d2b457f9fc945">getFilenameWithoutExtention</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classPath.html#af88533570e90b1bd077b53a00f52e23e">isAbsolute</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="classPath.html#a6cd77c09eca4f2fddfa044139d168d41">   65</a></span>    <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code hl_variable" href="classPath.html#a6cd77c09eca4f2fddfa044139d168d41">separator</a>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="};">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classFile.html">   71</a></span><span class="keyword">class </span><a class="code hl_class" href="classFile.html">File</a></div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>{</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFile.html#a998fdcdb01aaefe6b7c69520c8195245">exists</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFile.html#ab4696174d655d6351e5112499bfa7b6d">isFile</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFile.html#ab999dfb94de904566a8e21904179e1c6">isDirectory</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">static</span> uint64_t <a class="code hl_function" href="classFile.html#ae56a540b0e6b8471fd7015219a6ce613">getSize</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <span class="keyword">static</span> uint64_t <a class="code hl_function" href="classFile.html#a46e049ed43221eb75fd8a3e198a88742">getLastModifiedTime</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">static</span> std::vector&lt;uint8_t&gt; <a class="code hl_function" href="classFile.html#a2b1f343ab4140da5d8337719985866cb">readBinary</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classFile.html#aa93221b3b0514ba39ccfa33841040aea">readText</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="classFile.html#a80a79861d4f660f8307b9882baa13b50">readLines</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFile.html#a590e1cb73497b6ce814b07987c7ddfb2">writeBinary</a>(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> <span class="keywordtype">void</span>* data, <span class="keywordtype">size_t</span> size);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFile.html#a13f2dd90a62ec009ff0b4dde2baccfd6">writeText</a>(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; data);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFile.html#aa182155e3ddfb81e686954b575c86fd3">appendText</a>(<span class="keyword">const</span> std::string&amp; path, <span class="keyword">const</span> std::string&amp; data);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFile.html#a6cd4aedfb30038c67709cfbd4f9bdea5">deleteFile</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFile.html#a53fe958bfcc9d9182cf0e4d601e1ff31">copy</a>(<span class="keyword">const</span> std::string&amp; from, <span class="keyword">const</span> std::string&amp; to);</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFile.html#a8e978b21c022928c1458d8438b34d58b">move</a>(<span class="keyword">const</span> std::string&amp; from, <span class="keyword">const</span> std::string&amp; to);</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classFile.html#a6b67bf95bcc9775438a322ce7bfb6eaa">rename</a>(<span class="keyword">const</span> std::string&amp; oldPath, <span class="keyword">const</span> std::string&amp; newPath);</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>};</div>
+</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span> </div>
+<div class="foldopen" id="foldopen00190" data-start="{" data-end="};">
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="classDirectory.html">  190</a></span><span class="keyword">class </span><a class="code hl_class" href="classDirectory.html">Directory</a></div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>{</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classDirectory.html#aefb6a76bb8880b63374f5b291cc00337">create</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classDirectory.html#a0412509f5fa1efa9e98014032526a946">createRecursive</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span> </div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classDirectory.html#a34240fb848fe80438cad603ea4b837bb">deleteDir</a>(<span class="keyword">const</span> std::string&amp; path, <span class="keywordtype">bool</span> recursive = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="classDirectory.html#a3dac4b458637adfd6e70a59219fbd73a">exists</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span> </div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="classDirectory.html#a4b5c9d8f8845733e10ce19bfe8daf1aa">listFiles</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="classDirectory.html#abc6c26f6bbf575bfe971ecbdf28efa5a">listDirectories</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keyword">static</span> std::vector&lt;std::string&gt; <a class="code hl_function" href="classDirectory.html#a2e3d59e9340e851ab78fd359facf0945">listAll</a>(<span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classDirectory.html#aaa4bd2124d7c64876850be4841a38be9">getCurrent</a>();</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classDirectory.html#a5bce6c50b4a944f6fe87751e84994687">getExecutable</a>();</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classDirectory.html#a92b0fa9fb4738f61a50c5faf928f4f8f">getUserHome</a>();</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keyword">static</span> std::string <a class="code hl_function" href="classDirectory.html#a58b93ef59e8e7973a260032207e47c1d">getTemp</a>();</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>};</div>
+</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
+<div class="foldopen" id="foldopen00271" data-start="{" data-end="};">
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno"><a class="line" href="classAsyncFile.html">  271</a></span><span class="keyword">class </span><a class="code hl_class" href="classAsyncFile.html">AsyncFile</a></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>{</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno"><a class="line" href="classAsyncFile.html#a313aa2424e6efd97c82bb0856561eafb">  274</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classAsyncFile.html#a313aa2424e6efd97c82bb0856561eafb">ReadCallback</a> = std::function&lt;void(std::vector&lt;uint8_t&gt;)&gt;;</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno"><a class="line" href="classAsyncFile.html#a26ccb776b7dfe9fe1611b44103674188">  275</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="classAsyncFile.html#a26ccb776b7dfe9fe1611b44103674188">ErrorCallback</a> = std::function&lt;void(<span class="keyword">const</span> std::string&amp;)&gt;;</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classAsyncFile.html#a528fffd3ae77a33a34c53bbb0f11c94c">ReadBinaryAsync</a>(<span class="keyword">const</span> std::string&amp; path,</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>        <a class="code hl_typedef" href="classAsyncFile.html#a313aa2424e6efd97c82bb0856561eafb">ReadCallback</a> onSuccess,</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>        <a class="code hl_typedef" href="classAsyncFile.html#a26ccb776b7dfe9fe1611b44103674188">ErrorCallback</a> onError = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>};</div>
+</div>
+<div class="ttc" id="aclassAsyncFile_html"><div class="ttname"><a href="classAsyncFile.html">AsyncFile</a></div><div class="ttdoc">Асинхронне зчитування файлів.</div><div class="ttdef"><b>Definition</b> FileSystem.h:272</div></div>
+<div class="ttc" id="aclassAsyncFile_html_a26ccb776b7dfe9fe1611b44103674188"><div class="ttname"><a href="classAsyncFile.html#a26ccb776b7dfe9fe1611b44103674188">AsyncFile::ErrorCallback</a></div><div class="ttdeci">std::function&lt; void(const std::string &amp;)&gt; ErrorCallback</div><div class="ttdef"><b>Definition</b> FileSystem.h:275</div></div>
+<div class="ttc" id="aclassAsyncFile_html_a313aa2424e6efd97c82bb0856561eafb"><div class="ttname"><a href="classAsyncFile.html#a313aa2424e6efd97c82bb0856561eafb">AsyncFile::ReadCallback</a></div><div class="ttdeci">std::function&lt; void(std::vector&lt; uint8_t &gt;)&gt; ReadCallback</div><div class="ttdef"><b>Definition</b> FileSystem.h:274</div></div>
+<div class="ttc" id="aclassAsyncFile_html_a528fffd3ae77a33a34c53bbb0f11c94c"><div class="ttname"><a href="classAsyncFile.html#a528fffd3ae77a33a34c53bbb0f11c94c">AsyncFile::ReadBinaryAsync</a></div><div class="ttdeci">static void ReadBinaryAsync(const std::string &amp;path, ReadCallback onSuccess, ErrorCallback onError=nullptr)</div><div class="ttdoc">Асинхронне зчитування бінарного файлу.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:427</div></div>
+<div class="ttc" id="aclassDirectory_html"><div class="ttname"><a href="classDirectory.html">Directory</a></div><div class="ttdoc">Утилітний клас для роботи з директоріями.</div><div class="ttdef"><b>Definition</b> FileSystem.h:191</div></div>
+<div class="ttc" id="aclassDirectory_html_a0412509f5fa1efa9e98014032526a946"><div class="ttname"><a href="classDirectory.html#a0412509f5fa1efa9e98014032526a946">Directory::createRecursive</a></div><div class="ttdeci">static bool createRecursive(const std::string &amp;path)</div><div class="ttdoc">Рекурсивно створює директорію та усі проміжні шляхи.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:257</div></div>
+<div class="ttc" id="aclassDirectory_html_a2e3d59e9340e851ab78fd359facf0945"><div class="ttname"><a href="classDirectory.html#a2e3d59e9340e851ab78fd359facf0945">Directory::listAll</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; listAll(const std::string &amp;path)</div><div class="ttdoc">Повертає список усіх об'єктів (файли + директорії).</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:368</div></div>
+<div class="ttc" id="aclassDirectory_html_a34240fb848fe80438cad603ea4b837bb"><div class="ttname"><a href="classDirectory.html#a34240fb848fe80438cad603ea4b837bb">Directory::deleteDir</a></div><div class="ttdeci">static bool deleteDir(const std::string &amp;path, bool recursive=false)</div><div class="ttdoc">Видаляє директорію.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:269</div></div>
+<div class="ttc" id="aclassDirectory_html_a3dac4b458637adfd6e70a59219fbd73a"><div class="ttname"><a href="classDirectory.html#a3dac4b458637adfd6e70a59219fbd73a">Directory::exists</a></div><div class="ttdeci">static bool exists(const std::string &amp;path)</div><div class="ttdoc">Перевіряє, чи існує директорія.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:292</div></div>
+<div class="ttc" id="aclassDirectory_html_a4b5c9d8f8845733e10ce19bfe8daf1aa"><div class="ttname"><a href="classDirectory.html#a4b5c9d8f8845733e10ce19bfe8daf1aa">Directory::listFiles</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; listFiles(const std::string &amp;path)</div><div class="ttdoc">Повертає список файлів у директорії.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:297</div></div>
+<div class="ttc" id="aclassDirectory_html_a58b93ef59e8e7973a260032207e47c1d"><div class="ttname"><a href="classDirectory.html#a58b93ef59e8e7973a260032207e47c1d">Directory::getTemp</a></div><div class="ttdeci">static std::string getTemp()</div><div class="ttdoc">Повертає тимчасову директорію.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:413</div></div>
+<div class="ttc" id="aclassDirectory_html_a5bce6c50b4a944f6fe87751e84994687"><div class="ttname"><a href="classDirectory.html#a5bce6c50b4a944f6fe87751e84994687">Directory::getExecutable</a></div><div class="ttdeci">static std::string getExecutable()</div><div class="ttdoc">Повертає шлях до виконуваного файлу.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:385</div></div>
+<div class="ttc" id="aclassDirectory_html_a92b0fa9fb4738f61a50c5faf928f4f8f"><div class="ttname"><a href="classDirectory.html#a92b0fa9fb4738f61a50c5faf928f4f8f">Directory::getUserHome</a></div><div class="ttdeci">static std::string getUserHome()</div><div class="ttdoc">Повертає домашню директорію користувача.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:402</div></div>
+<div class="ttc" id="aclassDirectory_html_aaa4bd2124d7c64876850be4841a38be9"><div class="ttname"><a href="classDirectory.html#aaa4bd2124d7c64876850be4841a38be9">Directory::getCurrent</a></div><div class="ttdeci">static std::string getCurrent()</div><div class="ttdoc">Повертає поточну робочу директорію.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:376</div></div>
+<div class="ttc" id="aclassDirectory_html_abc6c26f6bbf575bfe971ecbdf28efa5a"><div class="ttname"><a href="classDirectory.html#abc6c26f6bbf575bfe971ecbdf28efa5a">Directory::listDirectories</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; listDirectories(const std::string &amp;path)</div><div class="ttdoc">Повертає список піддиректорій.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:330</div></div>
+<div class="ttc" id="aclassDirectory_html_aefb6a76bb8880b63374f5b291cc00337"><div class="ttname"><a href="classDirectory.html#aefb6a76bb8880b63374f5b291cc00337">Directory::create</a></div><div class="ttdeci">static bool create(const std::string &amp;path)</div><div class="ttdoc">Створює директорію.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:248</div></div>
+<div class="ttc" id="aclassFile_html"><div class="ttname"><a href="classFile.html">File</a></div><div class="ttdoc">Утилітний клас для роботи з файлами.</div><div class="ttdef"><b>Definition</b> FileSystem.h:72</div></div>
+<div class="ttc" id="aclassFile_html_a13f2dd90a62ec009ff0b4dde2baccfd6"><div class="ttname"><a href="classFile.html#a13f2dd90a62ec009ff0b4dde2baccfd6">File::writeText</a></div><div class="ttdeci">static bool writeText(const std::string &amp;path, const std::string &amp;data)</div><div class="ttdoc">Записує текст у файл (перезаписує існуючий вміст).</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:201</div></div>
+<div class="ttc" id="aclassFile_html_a2b1f343ab4140da5d8337719985866cb"><div class="ttname"><a href="classFile.html#a2b1f343ab4140da5d8337719985866cb">File::readBinary</a></div><div class="ttdeci">static std::vector&lt; uint8_t &gt; readBinary(const std::string &amp;path)</div><div class="ttdoc">Зчитує бінарні дані з файлу.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:148</div></div>
+<div class="ttc" id="aclassFile_html_a46e049ed43221eb75fd8a3e198a88742"><div class="ttname"><a href="classFile.html#a46e049ed43221eb75fd8a3e198a88742">File::getLastModifiedTime</a></div><div class="ttdeci">static uint64_t getLastModifiedTime(const std::string &amp;path)</div><div class="ttdoc">Повертає час останньої модифікації файлу.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:130</div></div>
+<div class="ttc" id="aclassFile_html_a53fe958bfcc9d9182cf0e4d601e1ff31"><div class="ttname"><a href="classFile.html#a53fe958bfcc9d9182cf0e4d601e1ff31">File::copy</a></div><div class="ttdeci">static bool copy(const std::string &amp;from, const std::string &amp;to)</div><div class="ttdoc">Копіює файл.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:224</div></div>
+<div class="ttc" id="aclassFile_html_a590e1cb73497b6ce814b07987c7ddfb2"><div class="ttname"><a href="classFile.html#a590e1cb73497b6ce814b07987c7ddfb2">File::writeBinary</a></div><div class="ttdeci">static bool writeBinary(const std::string &amp;path, const void *data, size_t size)</div><div class="ttdoc">Записує бінарні дані у файл.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:192</div></div>
+<div class="ttc" id="aclassFile_html_a6b67bf95bcc9775438a322ce7bfb6eaa"><div class="ttname"><a href="classFile.html#a6b67bf95bcc9775438a322ce7bfb6eaa">File::rename</a></div><div class="ttdeci">static bool rename(const std::string &amp;oldPath, const std::string &amp;newPath)</div><div class="ttdoc">Перейменовує файл.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:240</div></div>
+<div class="ttc" id="aclassFile_html_a6cd4aedfb30038c67709cfbd4f9bdea5"><div class="ttname"><a href="classFile.html#a6cd4aedfb30038c67709cfbd4f9bdea5">File::deleteFile</a></div><div class="ttdeci">static bool deleteFile(const std::string &amp;path)</div><div class="ttdoc">Видаляє файл.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:219</div></div>
+<div class="ttc" id="aclassFile_html_a80a79861d4f660f8307b9882baa13b50"><div class="ttname"><a href="classFile.html#a80a79861d4f660f8307b9882baa13b50">File::readLines</a></div><div class="ttdeci">static std::vector&lt; std::string &gt; readLines(const std::string &amp;path)</div><div class="ttdoc">Зчитує всі рядки файлу у вектор.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:176</div></div>
+<div class="ttc" id="aclassFile_html_a8e978b21c022928c1458d8438b34d58b"><div class="ttname"><a href="classFile.html#a8e978b21c022928c1458d8438b34d58b">File::move</a></div><div class="ttdeci">static bool move(const std::string &amp;from, const std::string &amp;to)</div><div class="ttdoc">Переміщує файл.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:235</div></div>
+<div class="ttc" id="aclassFile_html_a998fdcdb01aaefe6b7c69520c8195245"><div class="ttname"><a href="classFile.html#a998fdcdb01aaefe6b7c69520c8195245">File::exists</a></div><div class="ttdeci">static bool exists(const std::string &amp;path)</div><div class="ttdoc">Перевіряє наявність файлу або директорії.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:93</div></div>
+<div class="ttc" id="aclassFile_html_aa182155e3ddfb81e686954b575c86fd3"><div class="ttname"><a href="classFile.html#aa182155e3ddfb81e686954b575c86fd3">File::appendText</a></div><div class="ttdeci">static bool appendText(const std::string &amp;path, const std::string &amp;data)</div><div class="ttdoc">Додає текст у кінець файлу.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:210</div></div>
+<div class="ttc" id="aclassFile_html_aa93221b3b0514ba39ccfa33841040aea"><div class="ttname"><a href="classFile.html#aa93221b3b0514ba39ccfa33841040aea">File::readText</a></div><div class="ttdeci">static std::string readText(const std::string &amp;path)</div><div class="ttdoc">Зчитує текст з файлу.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:164</div></div>
+<div class="ttc" id="aclassFile_html_ab4696174d655d6351e5112499bfa7b6d"><div class="ttname"><a href="classFile.html#ab4696174d655d6351e5112499bfa7b6d">File::isFile</a></div><div class="ttdeci">static bool isFile(const std::string &amp;path)</div><div class="ttdoc">Перевіряє, чи є шлях файлом.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:99</div></div>
+<div class="ttc" id="aclassFile_html_ab999dfb94de904566a8e21904179e1c6"><div class="ttname"><a href="classFile.html#ab999dfb94de904566a8e21904179e1c6">File::isDirectory</a></div><div class="ttdeci">static bool isDirectory(const std::string &amp;path)</div><div class="ttdoc">Перевіряє, чи є шлях директорією.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:111</div></div>
+<div class="ttc" id="aclassFile_html_ae56a540b0e6b8471fd7015219a6ce613"><div class="ttname"><a href="classFile.html#ae56a540b0e6b8471fd7015219a6ce613">File::getSize</a></div><div class="ttdeci">static uint64_t getSize(const std::string &amp;path)</div><div class="ttdoc">Повертає розмір файлу в байтах.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:123</div></div>
+<div class="ttc" id="aclassPath_html"><div class="ttname"><a href="classPath.html">Path</a></div><div class="ttdoc">Утилітний клас для роботи з шляхами файлів та директорій.</div><div class="ttdef"><b>Definition</b> FileSystem.h:12</div></div>
+<div class="ttc" id="aclassPath_html_a37ed8c0352543194442d2b457f9fc945"><div class="ttname"><a href="classPath.html#a37ed8c0352543194442d2b457f9fc945">Path::getFilenameWithoutExtention</a></div><div class="ttdeci">static std::string getFilenameWithoutExtention(const std::string &amp;path)</div><div class="ttdoc">Повертає ім'я файлу без розширення.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:73</div></div>
+<div class="ttc" id="aclassPath_html_a44c5f85d26d52863c8f88dd560ff4ad3"><div class="ttname"><a href="classPath.html#a44c5f85d26d52863c8f88dd560ff4ad3">Path::getExtention</a></div><div class="ttdeci">static std::string getExtention(const std::string &amp;path)</div><div class="ttdoc">Повертає розширення файлу (без крапки).</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:65</div></div>
+<div class="ttc" id="aclassPath_html_a48b720418f1de5c460e3bfe5210e7eef"><div class="ttname"><a href="classPath.html#a48b720418f1de5c460e3bfe5210e7eef">Path::getDirectory</a></div><div class="ttdeci">static std::string getDirectory(const std::string &amp;path)</div><div class="ttdoc">Повертає директорію з повного шляху.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:51</div></div>
+<div class="ttc" id="aclassPath_html_a4ac32f60a8c773877af18c39bd28aec9"><div class="ttname"><a href="classPath.html#a4ac32f60a8c773877af18c39bd28aec9">Path::normalize</a></div><div class="ttdeci">static std::string normalize(const std::string &amp;path)</div><div class="ttdoc">Нормалізує шлях (змінює роздільники, видаляє зайві елементи).</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:26</div></div>
+<div class="ttc" id="aclassPath_html_a6cd77c09eca4f2fddfa044139d168d41"><div class="ttname"><a href="classPath.html#a6cd77c09eca4f2fddfa044139d168d41">Path::separator</a></div><div class="ttdeci">static const char separator</div><div class="ttdoc">Символ роздільника шляху (залежить від платформи)</div><div class="ttdef"><b>Definition</b> FileSystem.h:65</div></div>
+<div class="ttc" id="aclassPath_html_abeb8b3619f08fb228ef7298edbed97db"><div class="ttname"><a href="classPath.html#abeb8b3619f08fb228ef7298edbed97db">Path::join</a></div><div class="ttdeci">static std::string join(const std::string &amp;a, const std::string &amp;b)</div><div class="ttdoc">Об'єднує два шляхи в один.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:36</div></div>
+<div class="ttc" id="aclassPath_html_accee7016deac4a17288aac72560ba205"><div class="ttname"><a href="classPath.html#accee7016deac4a17288aac72560ba205">Path::getFilename</a></div><div class="ttdeci">static std::string getFilename(const std::string &amp;path)</div><div class="ttdoc">Повертає ім'я файлу з шляху.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:58</div></div>
+<div class="ttc" id="aclassPath_html_af88533570e90b1bd077b53a00f52e23e"><div class="ttname"><a href="classPath.html#af88533570e90b1bd077b53a00f52e23e">Path::isAbsolute</a></div><div class="ttdeci">static bool isAbsolute(const std::string &amp;path)</div><div class="ttdoc">Перевіряє, чи є шлях абсолютним.</div><div class="ttdef"><b>Definition</b> FileSystem.cpp:81</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

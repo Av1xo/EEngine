@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>EverEngine: Клас Input</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">EverEngine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Створено системою Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Пошук');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Завантаження...</div>
+<div class="SRStatus" id="Searching">Пошук...</div>
+<div class="SRStatus" id="NoMatches">Нічого не знайдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Класи</a> &#124;
+<a href="#pub-types">Загальнодоступні типи</a> &#124;
+<a href="#pub-methods">Загальнодоступні елементи</a> &#124;
+<a href="classInput-members.html">Список всіх елементів</a>  </div>
+  <div class="headertitle"><div class="title">Клас Input</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Клас для обробки введення з клавіатури.  
+ <a href="classInput.html#details">Детальніше...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Input_8h_source.html">Input.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Загальнодоступні типи</h2></td></tr>
+<tr class="memitem:a962231d0107441f21764b1fbf0bc2ead" id="r_a962231d0107441f21764b1fbf0bc2ead"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a962231d0107441f21764b1fbf0bc2ead">KeyEventCallback</a> = std::function&lt; void()&gt;</td></tr>
+<tr class="memdesc:a962231d0107441f21764b1fbf0bc2ead"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тип колбеку для обробки подій клавіш  <br /></td></tr>
+<tr class="separator:a962231d0107441f21764b1fbf0bc2ead"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Загальнодоступні елементи</h2></td></tr>
+<tr class="memitem:a391abd9246617ecc1d7c5ad72ec40435" id="r_a391abd9246617ecc1d7c5ad72ec40435"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a391abd9246617ecc1d7c5ad72ec40435">init</a> (<a class="el" href="classEventDispatcher.html">EventDispatcher</a> &amp;dispatcher)</td></tr>
+<tr class="memdesc:a391abd9246617ecc1d7c5ad72ec40435"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ініціалізація <a class="el" href="classInput.html" title="Клас для обробки введення з клавіатури.">Input</a> та підписка на <a class="el" href="classEventDispatcher.html" title="Диспетчер подій для централізованої обробки системних повідомлень">EventDispatcher</a>.  <br /></td></tr>
+<tr class="separator:a391abd9246617ecc1d7c5ad72ec40435"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f90b4722512f03f79b5efc1688e5036" id="r_a2f90b4722512f03f79b5efc1688e5036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a2f90b4722512f03f79b5efc1688e5036">onKeyPressed</a> (<a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> code, <a class="el" href="classInput.html#a962231d0107441f21764b1fbf0bc2ead">KeyEventCallback</a> callback)</td></tr>
+<tr class="memdesc:a2f90b4722512f03f79b5efc1688e5036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Додає колбек на подію натискання клавіші.  <br /></td></tr>
+<tr class="separator:a2f90b4722512f03f79b5efc1688e5036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea4d429e72adb787c96ac5146bf81485" id="r_aea4d429e72adb787c96ac5146bf81485"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aea4d429e72adb787c96ac5146bf81485">onKeyReleased</a> (<a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> code, <a class="el" href="classInput.html#a962231d0107441f21764b1fbf0bc2ead">KeyEventCallback</a> callback)</td></tr>
+<tr class="memdesc:aea4d429e72adb787c96ac5146bf81485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Додає колбек на подію відпускання клавіші.  <br /></td></tr>
+<tr class="separator:aea4d429e72adb787c96ac5146bf81485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadafbc34bdb7b5b5fcc1bf442f16f2c4" id="r_aadafbc34bdb7b5b5fcc1bf442f16f2c4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aadafbc34bdb7b5b5fcc1bf442f16f2c4">isKeyDown</a> (<a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> key) const</td></tr>
+<tr class="memdesc:aadafbc34bdb7b5b5fcc1bf442f16f2c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевіряє, чи клавіша зараз натиснута.  <br /></td></tr>
+<tr class="separator:aadafbc34bdb7b5b5fcc1bf442f16f2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab831dac9c32f59a85e695aeb79e30ec0" id="r_ab831dac9c32f59a85e695aeb79e30ec0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ab831dac9c32f59a85e695aeb79e30ec0">isKeyUp</a> (<a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> key) const</td></tr>
+<tr class="memdesc:ab831dac9c32f59a85e695aeb79e30ec0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевіряє, чи клавіша зараз відпущена.  <br /></td></tr>
+<tr class="separator:ab831dac9c32f59a85e695aeb79e30ec0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6872a9ed921fd650bca8765451ceb459" id="r_a6872a9ed921fd650bca8765451ceb459"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a6872a9ed921fd650bca8765451ceb459">wasKeyPressedThisFrame</a> (<a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> key) const</td></tr>
+<tr class="memdesc:a6872a9ed921fd650bca8765451ceb459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевіряє, чи клавіша була натиснута у поточному кадрі.  <br /></td></tr>
+<tr class="separator:a6872a9ed921fd650bca8765451ceb459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a819b3743ce8f2cf6a0e2625946635b1d" id="r_a819b3743ce8f2cf6a0e2625946635b1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a819b3743ce8f2cf6a0e2625946635b1d">wasKeyReleasedThisFrame</a> (<a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> key) const</td></tr>
+<tr class="memdesc:a819b3743ce8f2cf6a0e2625946635b1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевіряє, чи клавіша була відпущена у поточному кадрі.  <br /></td></tr>
+<tr class="separator:a819b3743ce8f2cf6a0e2625946635b1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a384e2a8bbbce371ffbe070bc577890cd" id="r_a384e2a8bbbce371ffbe070bc577890cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a384e2a8bbbce371ffbe070bc577890cd">isKeyRepeated</a> (<a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a> key) const</td></tr>
+<tr class="memdesc:a384e2a8bbbce371ffbe070bc577890cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перевіряє, чи клавіша була повторно натиснута (repeat).  <br /></td></tr>
+<tr class="separator:a384e2a8bbbce371ffbe070bc577890cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5490a2f448800b31835d5486690ae26a" id="r_a5490a2f448800b31835d5486690ae26a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a5490a2f448800b31835d5486690ae26a">endFrame</a> ()</td></tr>
+<tr class="memdesc:a5490a2f448800b31835d5486690ae26a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Завершення кадру. Очищає стан натискань/відпускань поточного кадру.  <br /></td></tr>
+<tr class="separator:a5490a2f448800b31835d5486690ae26a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Детальний опис</h2>
+<div class="textblock"><p>Клас для обробки введення з клавіатури. </p>
+<p>Забезпечує відстеження стану клавіш, підтримку подій натискання, відпускання, повторного натискання та колбеків на клавіші. </p>
+</div><h2 class="groupheader">Опис типів користувача</h2>
+<a id="a962231d0107441f21764b1fbf0bc2ead" name="a962231d0107441f21764b1fbf0bc2ead"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a962231d0107441f21764b1fbf0bc2ead">&#9670;&#160;</a></span>KeyEventCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classInput.html#a962231d0107441f21764b1fbf0bc2ead">Input::KeyEventCallback</a> =  std::function&lt;void()&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Тип колбеку для обробки подій клавіш </p>
+
+</div>
+</div>
+<h2 class="groupheader">Опис методів компонент</h2>
+<a id="a5490a2f448800b31835d5486690ae26a" name="a5490a2f448800b31835d5486690ae26a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5490a2f448800b31835d5486690ae26a">&#9670;&#160;</a></span>endFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Input::endFrame </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Завершення кадру. Очищає стан натискань/відпускань поточного кадру. </p>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classInput_a5490a2f448800b31835d5486690ae26a_icgraph.svg" width="264" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a391abd9246617ecc1d7c5ad72ec40435" name="a391abd9246617ecc1d7c5ad72ec40435"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a391abd9246617ecc1d7c5ad72ec40435">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Input::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classEventDispatcher.html">EventDispatcher</a> &amp;&#160;</td>
+          <td class="paramname"><em>dispatcher</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ініціалізація <a class="el" href="classInput.html" title="Клас для обробки введення з клавіатури.">Input</a> та підписка на <a class="el" href="classEventDispatcher.html" title="Диспетчер подій для централізованої обробки системних повідомлень">EventDispatcher</a>. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dispatcher</td><td>Диспетчер подій, через який будуть приходити події клавіш. </td></tr>
+  </table>
+  </dd>
+</dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classInput_a391abd9246617ecc1d7c5ad72ec40435_cgraph.svg" width="283" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classInput_a391abd9246617ecc1d7c5ad72ec40435_icgraph.svg" width="222" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="aadafbc34bdb7b5b5fcc1bf442f16f2c4" name="aadafbc34bdb7b5b5fcc1bf442f16f2c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadafbc34bdb7b5b5fcc1bf442f16f2c4">&#9670;&#160;</a></span>isKeyDown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Input::isKeyDown </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перевіряє, чи клавіша зараз натиснута. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Клавіша. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо клавіша натиснута. </dd></dl>
+<div class="dynheader">
+Граф викликів для цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classInput_aadafbc34bdb7b5b5fcc1bf442f16f2c4_icgraph.svg" width="295" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a384e2a8bbbce371ffbe070bc577890cd" name="a384e2a8bbbce371ffbe070bc577890cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a384e2a8bbbce371ffbe070bc577890cd">&#9670;&#160;</a></span>isKeyRepeated()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Input::isKeyRepeated </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перевіряє, чи клавіша була повторно натиснута (repeat). </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Клавіша. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо клавіша повторно натиснута. </dd></dl>
+
+</div>
+</div>
+<a id="ab831dac9c32f59a85e695aeb79e30ec0" name="ab831dac9c32f59a85e695aeb79e30ec0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab831dac9c32f59a85e695aeb79e30ec0">&#9670;&#160;</a></span>isKeyUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Input::isKeyUp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перевіряє, чи клавіша зараз відпущена. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Клавіша. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо клавіша відпущена. </dd></dl>
+<div class="dynheader">
+Граф всіх викликів цієї функції:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classInput_ab831dac9c32f59a85e695aeb79e30ec0_cgraph.svg" width="295" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2f90b4722512f03f79b5efc1688e5036" name="a2f90b4722512f03f79b5efc1688e5036"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f90b4722512f03f79b5efc1688e5036">&#9670;&#160;</a></span>onKeyPressed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Input::onKeyPressed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classInput.html#a962231d0107441f21764b1fbf0bc2ead">KeyEventCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Додає колбек на подію натискання клавіші. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>Клавіша. </td></tr>
+    <tr><td class="paramname">callback</td><td>Функція, яка викликається при натисканні клавіші. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aea4d429e72adb787c96ac5146bf81485" name="aea4d429e72adb787c96ac5146bf81485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea4d429e72adb787c96ac5146bf81485">&#9670;&#160;</a></span>onKeyReleased()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Input::onKeyReleased </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>code</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classInput.html#a962231d0107441f21764b1fbf0bc2ead">KeyEventCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Додає колбек на подію відпускання клавіші. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">code</td><td>Клавіша. </td></tr>
+    <tr><td class="paramname">callback</td><td>Функція, яка викликається при відпусканні клавіші. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6872a9ed921fd650bca8765451ceb459" name="a6872a9ed921fd650bca8765451ceb459"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6872a9ed921fd650bca8765451ceb459">&#9670;&#160;</a></span>wasKeyPressedThisFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Input::wasKeyPressedThisFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перевіряє, чи клавіша була натиснута у поточному кадрі. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Клавіша. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо клавіша натиснута в цьому кадрі. </dd></dl>
+
+</div>
+</div>
+<a id="a819b3743ce8f2cf6a0e2625946635b1d" name="a819b3743ce8f2cf6a0e2625946635b1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a819b3743ce8f2cf6a0e2625946635b1d">&#9670;&#160;</a></span>wasKeyReleasedThisFrame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Input::wasKeyReleasedThisFrame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="Keyboard_8h.html#a7885f47644a0388f981f416fa20389b2">KeyCode</a>&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Перевіряє, чи клавіша була відпущена у поточному кадрі. </p>
+<dl class="params"><dt>Аргументи</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>Клавіша. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Повертає</dt><dd>true, якщо клавіша відпущена в цьому кадрі. </dd></dl>
+
+</div>
+</div>
+<hr/>Документація цих класів була створена з файлів:<ul>
+<li><a class="el" href="Input_8h_source.html">Input.h</a></li>
+<li><a class="el" href="Input_8cpp.html">Input.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Створено системою&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<map id="Directory::listDirectories" name="Directory::listDirectories">
+<area shape="rect" id="Node000001" title="Повертає список піддиректорій." alt="" coords="5,31,168,56"/>
+<area shape="rect" id="Node000002" href="$classFile.html#ab999dfb94de904566a8e21904179e1c6" title="Перевіряє, чи є шлях директорією." alt="" coords="216,5,331,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,30,202,25,203,30,169,35"/>
+<area shape="rect" id="Node000003" href="$classPath.html#abeb8b3619f08fb228ef7298edbed97db" title="Об&#39;єднує два шляхи в один." alt="" coords="235,55,312,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="169,51,221,58,220,63,168,56"/>
+<area shape="rect" id="Node000004" href="$classPath.html#a4ac32f60a8c773877af18c39bd28aec9" title="Нормалізує шлях (змінює роздільники, видаляє зайві елементи)." alt="" coords="379,55,492,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="312,65,365,65,365,70,312,70"/>
+</map>

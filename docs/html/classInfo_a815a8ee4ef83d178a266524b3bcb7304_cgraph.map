@@ -1,0 +1,5 @@
+<map id="Info::IsDebug" name="Info::IsDebug">
+<area shape="rect" id="Node000001" title="Перевіряє, чи збірка є налагоджувальною (Debug)." alt="" coords="5,5,107,31"/>
+<area shape="rect" id="Node000002" href="$classInfo.html#abfa9f3fd46058429eb38fccc47603d5a" title="Повертає тип збірки." alt="" coords="155,5,285,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,15,141,15,141,21,107,21"/>
+</map>

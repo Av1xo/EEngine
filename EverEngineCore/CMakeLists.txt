@@ -18,6 +18,7 @@ set(ENGINE_PUBLIC_INCLUDES
 set(ENGINE_PRIVATE_INCLUDES
     platform/Window.h
     platform/Input.h
+    platform/Keyboard.h
     platform/filesystem/FileSystem.h
     platform/Platform.h
     rendering/Renderer.h

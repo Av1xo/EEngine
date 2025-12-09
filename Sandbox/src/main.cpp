@@ -1,4 +1,5 @@
 #include <EverEngineCore/core/Engine.h>
+#include <EverEngineCore/core/Log.h>
 #include <iostream>
 #include <memory>
 
@@ -13,10 +14,21 @@ public:
                 std::cout << "Window resize: " << event.width << "x" << event.height << std::endl; 
             }
         );
+        getInput().onKeyPressed(KeyCode::Space, [this]() {
+            LOG_INFO("Jump!");
+        });
     }
     virtual void on_update() override
     {
-
+        if (getInput().isKeyDown(KeyCode::W))
+        {
+            LOG_INFO("Moving forward");
+        }
+        
+        if (getInput().wasKeyPressedThisFrame(KeyCode::Esc))
+        {
+            LOG_INFO("Pause menu");
+        }
     }
 };
 

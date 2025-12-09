@@ -2,6 +2,7 @@
 
 
 #include "EverEngineCore/core/Event.h"
+#include "EverEngineCore/platform/Input.h"
 #include <memory>
 
 class Engine
@@ -9,6 +10,7 @@ class Engine
 private:
     std::unique_ptr<class Window> m_window;
     EventDispatcher m_dispatcher;
+    Input m_input;
 public:
     Engine();
     virtual ~Engine();
@@ -26,4 +28,5 @@ public:
 
     int run();
     EventDispatcher& getDispatcher() { return m_dispatcher; }
+    Input& getInput() { return m_input; } 
 };

@@ -14,6 +14,8 @@ Engine::~Engine() {
 int Engine::init(unsigned int window_width, unsigned int window_height, const char* title) {
     m_window = std::make_unique<Window>(window_width, window_height, title);
     Time::init();
+    m_input.init(m_dispatcher);
+
     LOG_INFO("ENGINE::INIT");
     return 0;
 }
@@ -38,8 +40,12 @@ int Engine::run()
     {  
         Time::update();
         m_dispatcher.process_event();
-        m_window->on_update();
+
         on_update();
+        
+        m_window->on_update();
+
+        m_input.endFrame();
     }
     m_window = nullptr;
 

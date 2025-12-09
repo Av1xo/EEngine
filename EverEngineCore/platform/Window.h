@@ -1,7 +1,7 @@
 #pragma once
 
 #include "EverEngineCore/core/Event.h"
-#include "EverEngineCore/platform/Input.h"
+#include "EverEngineCore/platform/Keyboard.h"
 
 #include <functional>
 #include <memory>

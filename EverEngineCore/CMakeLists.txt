@@ -100,6 +100,21 @@ if(fmt_FOUND)
     target_link_libraries(${ENGINE_PROJECT_NAME} PUBLIC fmt::fmt)
 endif()
 
+# glad
+find_package(glad QUIET)
+if(glad_FOUND)
+    message(STATUS "Found system glad")
+    target_link_libraries(${ENGINE_PROJECT_NAME} PUBLIC glad::glad)
+else()
+    message(STATUS "Using bundled glad from external/")
+    if(EXISTS ${CMAKE_SOURCE_DIR}/external/glad)
+        add_subdirectory(${CMAKE_SOURCE_DIR}/external/glad ${CMAKE_CURRENT_BINARY_DIR}/glad)
+        target_link_libraries(${ENGINE_PROJECT_NAME} PUBLIC glad)
+    else()
+        message(FATAL_ERROR "glad not found! Install it or add to external/")
+    endif()
+endif()
+
 # OpenGL
 find_package(OpenGL REQUIRED)
 target_link_libraries(${ENGINE_PROJECT_NAME} PUBLIC OpenGL::GL)

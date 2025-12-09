@@ -1,5 +1,7 @@
 #pragma once
 
+#include "EverEngineCore/platform/Input.h"
+
 #include <functional>
 #include <vector>
 #include <array>
@@ -118,5 +120,36 @@ struct EventWindowResize : public BaseEvent
     EventWindowResize(unsigned int w, unsigned int h)
         : width(w), height(h) {}
         
+    EventType get_type() const override { return type; }
+};
+
+struct EventKeyPressed : public BaseEvent
+{
+    static const inline EventType type = EventType::KeyPressed;
+
+    KeyCode key;
+    int scancode;
+    int mods;
+    bool repeat;
+
+    EventKeyPressed(KeyCode key, int scancode, int mods, bool repeat)
+        : key(key), scancode(scancode), mods(mods), repeat(repeat) {}
+
+    EventType get_type() const override { return type; }
+
+    bool isRepeat() { return repeat; }
+};
+
+struct EventKeyReleased : public BaseEvent
+{
+    static const inline EventType type = EventType::KeyReleased;
+
+    KeyCode key;
+    int scancode;
+    int mods;
+
+    EventKeyReleased(KeyCode key, int scancode, int mods)
+        : key(key), scancode(scancode), mods(mods) {}
+
     EventType get_type() const override { return type; }
 };

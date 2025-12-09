@@ -1,6 +1,7 @@
 #pragma once
 
 #include "EverEngineCore/core/Event.h"
+#include "EverEngineCore/platform/Input.h"
 
 #include <functional>
 #include <memory>
@@ -46,6 +47,7 @@ private:
 
     int init();
     void shutdown();
+    static KeyCode toKeyCode(int glfwKey);
     void pollEvents();
     void swap();
 

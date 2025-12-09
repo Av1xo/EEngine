@@ -18,6 +18,8 @@ set(ENGINE_PUBLIC_INCLUDES
 set(ENGINE_PRIVATE_INCLUDES
     platform/Window.h
     platform/Input.h
+    platform/filesystem/FileSystem.h
+    platform/Platform.h
     rendering/Renderer.h
     rendering/Shader.h
     rendering/Mesh.h
@@ -33,6 +35,8 @@ set(ENGINE_PRIVATE_SOURCES
     core/Engine.cpp
     core/Time.cpp
     platform/Window.cpp
+    platform/filesystem/FileSystem.cpp
+    platform/Platform.cpp
     platform/Input.cpp
     rendering/Renderer.cpp
     rendering/Shader.cpp

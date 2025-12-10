@@ -21,7 +21,9 @@ set(ENGINE_PRIVATE_INCLUDES
     platform/Keyboard.h
     platform/filesystem/FileSystem.h
     platform/Platform.h
-    rendering/Renderer.h
+    rendering/renderer/API/OpenGL/OpenGLRendererAPI.h
+    rendering/renderer/API/RendererAPI.h
+    rendering/renderer/Renderer.h
     rendering/Shader.h
     rendering/Mesh.h
     scene/Scene.h
@@ -39,7 +41,8 @@ set(ENGINE_PRIVATE_SOURCES
     platform/filesystem/FileSystem.cpp
     platform/Platform.cpp
     platform/Input.cpp
-    rendering/Renderer.cpp
+    rendering/renderer/API/OpenGL/OpenGLRendererAPI.cpp
+    rendering/renderer/Renderer.cpp
     rendering/Shader.cpp
     rendering/Mesh.cpp
     scene/Scene.cpp

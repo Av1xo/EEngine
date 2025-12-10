@@ -83,6 +83,8 @@ public:
      */
     GLFWwindow* getHandle() const { return m_window; }
 
+    using ProcLoader = void*(*)(const char*);
+    ProcLoader getProcLoader();
 private:
     /**
      * @brief Структура для зберігання параметрів вікна.

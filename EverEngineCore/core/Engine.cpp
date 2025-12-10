@@ -2,6 +2,7 @@
 #include "EverEngineCore/core/Time.h"
 #include "EverEngineCore/platform/Window.h"
 #include "EverEngineCore/core/Log.h"
+#include "EverEngineCore/rendering/renderer/Renderer.h"
 
 Engine::Engine() {
     LOG_INFO("ENGINE::CREATE");
@@ -15,7 +16,7 @@ int Engine::init(unsigned int window_width, unsigned int window_height, const ch
     m_window = std::make_unique<Window>(window_width, window_height, title);
     Time::init();
     m_input.init(m_dispatcher);
-
+    Renderer::init(m_window->getProcLoader());
     LOG_INFO("ENGINE::INIT");
     return 0;
 }
@@ -42,10 +43,11 @@ int Engine::run()
         m_dispatcher.process_event();
 
         on_update();
-        
         m_window->on_update();
 
         m_input.endFrame();
+        Renderer::setClearColor(0.5f, 0.3f, 0.7f, 1.0f);
+        Renderer::clear();
     }
     m_window = nullptr;
 

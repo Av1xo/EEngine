@@ -16,7 +16,6 @@ private:
     std::unique_ptr<class Window> m_window;  ///< Вказівник на вікно застосунку
     EventDispatcher m_dispatcher;             ///< Диспетчер подій для обробки системних повідомлень
     Input m_input;                            ///< Система вводу для обробки клавіатури та миші
-
 public:
     /**
      * @brief Конструктор за замовчуванням

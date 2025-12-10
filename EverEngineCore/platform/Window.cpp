@@ -233,6 +233,12 @@ KeyCode Window::toKeyCode(int key)
     }
 }
 
+Window::ProcLoader Window::getProcLoader()
+{
+    return [](const char* name) -> void* {
+        return (void*)glfwGetProcAddress(name);
+    };
+}
 
 void Window::on_update()
 {

@@ -24,6 +24,13 @@ set(ENGINE_PRIVATE_INCLUDES
     rendering/renderer/API/OpenGL/OpenGLRendererAPI.h
     rendering/renderer/API/RendererAPI.h
     rendering/renderer/Renderer.h
+    rendering/buffers/VertexBuffer.h
+    rendering/buffers/VertexArray.h
+    rendering/buffers/IndexBuffer.h
+    rendering/buffers/BufferLayout.h
+    rendering/buffers/API/OpenGL/OpenGLVertexBuffer.h
+    rendering/buffers/API/OpenGL/OpenGLVertexArray.h
+    rendering/buffers/API/OpenGL/OpenGLIndexBuffer.h
     rendering/Shader.h
     rendering/Mesh.h
     scene/Scene.h
@@ -43,6 +50,13 @@ set(ENGINE_PRIVATE_SOURCES
     platform/Input.cpp
     rendering/renderer/API/OpenGL/OpenGLRendererAPI.cpp
     rendering/renderer/Renderer.cpp
+    rendering/buffers/VertexBuffer.cpp
+    rendering/buffers/VertexArray.cpp
+    rendering/buffers/IndexBuffer.cpp
+    rendering/buffers/BufferLayout.cpp
+    rendering/buffers/API/OpenGL/OpenGLVertexBuffer.cpp
+    rendering/buffers/API/OpenGL/OpenGLVertexArray.cpp
+    rendering/buffers/API/OpenGL/OpenGLIndexBuffer.cpp
     rendering/Shader.cpp
     rendering/Mesh.cpp
     scene/Scene.cpp
@@ -120,6 +134,21 @@ else()
         target_link_libraries(${ENGINE_PROJECT_NAME} PUBLIC glad)
     else()
         message(FATAL_ERROR "glad not found! Install it or add to external/")
+    endif()
+endif()
+
+# glm
+find_package(glm QUIET)
+if(glm_FOUND)
+    message(STATUS "Found system glm")
+    target_link_libraries(${ENGINE_PROJECT_NAME} PUBLIC glm::glm)
+else()
+    message(STATUS "Using bundled glm from external/")
+    if(EXISTS ${CMAKE_SOURCE_DIR}/external/glm)
+        add_subdirectory(${CMAKE_SOURCE_DIR}/external/glm ${CMAKE_CURRENT_BINARY_DIR}/glm)
+        target_link_libraries(${ENGINE_PROJECT_NAME} PUBLIC glm)
+    else()
+        message(FATAL_ERROR "glm not found! Install it or add to external/")
     endif()
 endif()
 

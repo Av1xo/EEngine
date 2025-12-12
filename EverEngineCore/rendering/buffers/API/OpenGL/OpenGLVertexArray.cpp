@@ -50,7 +50,7 @@ void OpenGLVertexArray::draw(DrawMode mode) const
     }
     else
     {
-
+        glDrawArrays(glMode, 0, m_vertexCount);
     }
     unbind();
 }

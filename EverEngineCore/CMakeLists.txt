@@ -31,7 +31,8 @@ set(ENGINE_PRIVATE_INCLUDES
     rendering/buffers/API/OpenGL/OpenGLVertexBuffer.h
     rendering/buffers/API/OpenGL/OpenGLVertexArray.h
     rendering/buffers/API/OpenGL/OpenGLIndexBuffer.h
-    rendering/Shader.h
+    rendering/shader/API/OpenGL/OpenGLShader.h
+    rendering/shader/Shader.h
     rendering/Mesh.h
     scene/Scene.h
     scene/Entity.h
@@ -57,7 +58,8 @@ set(ENGINE_PRIVATE_SOURCES
     rendering/buffers/API/OpenGL/OpenGLVertexBuffer.cpp
     rendering/buffers/API/OpenGL/OpenGLVertexArray.cpp
     rendering/buffers/API/OpenGL/OpenGLIndexBuffer.cpp
-    rendering/Shader.cpp
+    rendering/shader/API/OpenGL/OpenGLShader.cpp
+    rendering/shader/Shader.cpp
     rendering/Mesh.cpp
     scene/Scene.cpp
 )

@@ -31,12 +31,13 @@ if [ -z "$COMMIT_MESSAGE" ]; then
     exit 1
 fi
 
+echo "$NEW_VERSION" > "$VERSION_FILE"
+
 git add .
 
 git commit -m "[EverEngine $NEW_VERSION] $COMMIT_MESSAGE"
 
 if [ $? -eq 0 ]; then
-    echo "$NEW_VERSION" > "$VERSION_FILE"
     echo ""
     echo "✓ Коміт успішно створено з версією $NEW_VERSION"
 else
